@@ -1,183 +1,193 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
+      "titulo": "CS GO",
+      "link": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/",
+      "cor": "#171717",
+      "logo": "https://www.k7-esports.com/uploads/1/1/2/8/112874503/published/counter-strike_2.png",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Tudo sobre Counter Strike Global Offensive",
+        "url": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Seja bem vindo ao Dmflix Games o portal com os melhores vídeos sobre jogos!",
+          "url": "https://www.youtube.com/watch?v=ycvX_48RYSA&t=3s"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Trailer CS GO",
+          "url": "https://www.youtube.com/watch?v=edYCtaNueQY"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "[PT-BR] MiBR vs. Astralis | IEM Katowice Major 2019 [Campeões - Dia 3] [Mapa 1 - OVERPASS]",
+          "url": "https://www.youtube.com/watch?v=n3fPzsgDD3E"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "FURIA VS MIBR BLAST PREMIER SPRING FINALS MD3 PRIMEIRO MAPA INFERNO",
+          "url": "https://www.youtube.com/watch?v=aZLbD2KIXik"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "VEJA COMO É A COMUNICAÇÃO DO MIBR NOS CAMPEONATOS (TÁTICAS E MOMENTOS ENGRAÇADOS)",
+          "url": "https://www.youtube.com/watch?v=RJtgitpUYbE"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-        },
-        {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
+          "titulo": "O BÁSICO que você DEVE SABER pra começar a jogar CSGO",
+          "url": "https://www.youtube.com/watch?v=X4lbt7rkz9o"
+        }
       ]
     },
     {
-      "titulo": "Back End",
-      "cor": "#00C86F",
+      "titulo": "League Of Legends",
+      "cor": "#171717",
+      "logo": "https://lolstatic-a.akamaihd.net/frontpage/apps/prod/playnow-global/pt_BR/328566a634ec929c4fc0ec5507c3b42a3bd4fb36/assets/img/lol-logo.png",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Tudo sobre League of Legends",
+        "url": "https://play.br.leagueoflegends.com/pt_BR"
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "COMO SE TORNAR UM PRO PLAYER DE LOL | Versus",
+          "url": "https://www.youtube.com/watch?v=MEfeCTBnR2A"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "Como nasce um Pro player?",
+          "url": "https://www.youtube.com/watch?v=zsrdMclFIfg"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "SSG x SKT (Final - Jogo 5) Mundial 2016",
+          "url": "https://www.youtube.com/watch?v=ChQCGyGYGHA"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "DRAVEN DO PAI? PARECE ATÉ QUE O JOGO FICA MAIS FÁCIL!",
+          "url": "https://www.youtube.com/watch?v=SDyzUp6sTYM"
         }, 
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "FAKER: CONHEÇA O GÊNIO DE LEAGUE OF LEGENDS | Perfil",
+          "url": "https://www.youtube.com/watch?v=ZKNQVXi2qPg"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
+      "titulo": "Mortal Kombat 11",
+      "cor": "#171717",
+      "logo": "https://www.kombatakademy.com/wp-content/uploads/images/Mortal-Kombat-11-Logo-Alt.png",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "Tudo sobre Mortal Kombat 11",
+        "url": "https://www.mortalkombat.com/pt-BR"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Mortal Kombat 11 - O Início PRIMEIRO capitulo GAMEPLAY completo (PT-BR PS4 PRO)",
+          "url": "https://www.youtube.com/watch?v=ZNs4iIJJ35E"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Mortal Kombat 11 - Todos os FATALITIES",
+          "url": "https://www.youtube.com/watch?v=ytNat8xHJCA"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "MK11: Final Kombat SonicFox Vs NinjaKilla (Grand Finals)",
+          "url": "https://www.youtube.com/watch?v=xFiuq4zZruQ"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "MORTAL KOMBAT 11 Trailer",
+          "url": "https://www.youtube.com/watch?v=bxFoRCvEjUA"
+        },
+        {
+          "titulo": "Mortal Kombat 11 - All Characters Fatalities Brutalities, Fatal Blow Every Fatality (MK11)",
+          "url": "https://www.youtube.com/watch?v=4wnLLJ52aB8"
         }
       ]
     },
     {
-      "titulo": "Filmes",
-      "cor": "orange",
-      "videos": [
-        {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
-        },
-        {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
-        },
-        {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-        },
-        {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
-        }
-      ]
-    },
-    {
-      "titulo": "Games",
-      "cor": "red",
+      "titulo": "Dota 2",
+      "cor": "#171717",
+      "logo": "https://steamcdn-a.akamaihd.net/apps/dota2/images/nav/logo.png",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
+        "text": "Tudo sobre Dota 2",
+        "url": "https://br.dota2.com/?l=portuguese"
       },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "Dota 2 Cinematic Trailer 2020",
+          "url": "https://www.youtube.com/watch?v=j6SmAoaH470"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "IG vs EHOME - GRAND FINAL - CHINA PRO League DPL-CDA DOTA 2",
+          "url": "https://www.youtube.com/watch?v=TTTNs8_rynk"
         },
         {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+          "titulo": "AGHANIM'S LABYRINTH GAMEPLAY - FULL CLEARED! - TI10 DOTA 2",
+          "url": "https://www.youtube.com/watch?v=KGKWX70V6uQ"
         },
         {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+          "titulo": "7 ABSOLUTELY BROKEN Hero Combos - BEST Picks for EASY MMR - Dota 2 Drafting Tips Guide",
+          "url": "https://www.youtube.com/watch?v=pzUQvmDV_l4"
         },
         {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+          "titulo": "INTRODUÇÃO AO JOGO - Aula 01 (Universidade Dota 2)",
+          "url": "https://www.youtube.com/watch?v=GEBVrZlY_Yo"
         }
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
+      "titulo": "Fortnite",
+      "cor": "#171717",
+      "logo": "https://www.pcspecialist.co.uk/images/landing/pcs/games/lp/fortnitelogo.png",
       "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
+        "text": "Tudo sobre Fortnite",
+        "url": "https://www.epicgames.com/fortnite/pt-BR/home"
+      },
+      "videos": [
+        {
+          "titulo": "FORTNITE PARA INICIANTES",
+          "url": "https://www.youtube.com/watch?v=ONM4pJ7LQLo"
+        },
+        {
+          "titulo": "FORTNITE BATTLE ROYALE - DICAS PARA INICIANTES",
+          "url": "https://www.youtube.com/watch?v=g9ma-w9oOlY"
+        },
+        {
+          "titulo": "Fortnite Gameplay",
+          "url": "https://www.youtube.com/watch?v=5Vzxj6flcfM"
+        },
+        {
+          "titulo": "#MundialFortnite - Dia 3: Finais Solo",
+          "url": "https://www.youtube.com/watch?v=yp7sJuRJMGo"
+        },
+        {
+          "titulo": "O MELHOR JOGADOR DE FORTNITE DO MUNDO!",
+          "url": "https://www.youtube.com/watch?v=GYCZXh0BDd8"
+        }
+      ]
+    },
+    {
+      "titulo": "Valorant",
+      "cor": "#171717",
+      "logo": "https://cdn1.dotesports.com/wp-content/uploads/sites/4/2020/03/02183355/V_Logotype_Red-1024x576-1024x576.png",
+      "link_extra": {
+        "text": "Tudo sobre Valorant",
         "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
       },
       "videos": [
         {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "Desafie seus limites // Trailer de Gameplay - VALORANT",
+          "url": "https://www.youtube.com/watch?v=h1Kp9x_ADZw"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "Valorant OMEN Best Plays | VALORANT Montage",
+          "url": "https://www.youtube.com/watch?v=hRGhahjnVfI"
         },
         {
           "titulo": "Frameworks",
           "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
         },
         {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "titulo": "Valorant RAZE Best Plays - VALORANT Montage",
+          "url": "https://www.youtube.com/watch?v=jCpWWRIZNas"
         },
         {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "VALORANT - All Game Trailers 2020 [4K 2160p]",
+          "url": "https://www.youtube.com/watch?v=wGYqOeCqwH0"
         }
       ]
     }

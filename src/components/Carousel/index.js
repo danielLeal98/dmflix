@@ -11,13 +11,14 @@ function VideoCardGroup({ ignoreFirstVideo, category }) {
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;
   const categoryExtraLink = category.link_extra;
+  const categoryLogo = category.logo;
   const videos = category.videos;
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
         <>
-          <Title style={{ backgroundColor: categoryColor || "red" }}>
-            {categoryTitle}
+          <Title style={{ backgroundColor: categoryColor || "transparent" }}>
+            <img src={categoryLogo} width="200px" height="70px" />
           </Title>
           {categoryExtraLink && (
             <ExtraLink href={categoryExtraLink.url} target="_blank">
