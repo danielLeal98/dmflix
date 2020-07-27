@@ -1,2 +1,2 @@
 # Dmflix Games
- Projeto baseado no netflix voltado para Jogos.
+ Projeto baseado no Layout do Netflix com o tema voltado para jogos da atualidade.
