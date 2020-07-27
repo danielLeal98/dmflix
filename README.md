@@ -1,2 +1,2 @@
 # reactFlix
- Projeto criado na imersão Alura
+ Projeto baseado no netflix voltado para Jogos.
