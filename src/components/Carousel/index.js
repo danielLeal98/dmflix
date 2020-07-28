@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { VideoCardGroupContainer, Title, ExtraLink } from "./styles";
 import VideoCard from "./components/VideoCard";
@@ -13,14 +14,11 @@ function Carousel({ ignoreFirstVideo, category }) {
     <VideoCardGroupContainer>
       {categoryTitle && (
         <>
-          <Title style={{ backgroundColor: categoryColor || "transparent" }}>
-            <img src={categoryLogo} width="200px" height="70px" />
-          </Title>
-          {categoryExtraLink && (
+          <Title style={{ backgroundColor: "transparent" }}>
             <ExtraLink href={categoryExtraLink.url} target="_blank">
-              {categoryExtraLink.text}
+              <img src={categoryLogo} width="250px" height="70px" />
             </ExtraLink>
-          )}
+          </Title>
         </>
       )}
       <Slider>

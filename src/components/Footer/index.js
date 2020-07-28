@@ -1,22 +1,23 @@
 import React from "react";
 import { FooterBase } from "./styles";
-import Logo from "../../assets/img/Logo.png";
+import Logo from "../../assets/img/logoGameFlix.png";
+import "../Footer/footer.css";
 
 function Footer() {
   return (
     <FooterBase>
       <p>
         <img
-          style={{ margin: "5px" }}
+          style={{ margin: "10px" }}
           src={Logo}
           alt="Logo Site"
-          width="100"
+          width="auto"
           height="50"
         />
       </p>
       <a href="https://www.linkedin.com/in/danielleal98/" target="_blank">
         <img
-          style={{ margin: "5px" }}
+          style={{ margin: "10px" }}
           src="https://image.flaticon.com/icons/png/512/174/174857.png"
           alt="Logo Linkedin"
           width="50"
@@ -25,7 +26,7 @@ function Footer() {
       </a>
       <a href="https://github.com/danielLeal98" target="_blank">
         <img
-          style={{ margin: "5px" }}
+          style={{ margin: "10px" }}
           src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png"
           alt="Logo GitHub"
           width="50"
@@ -34,7 +35,7 @@ function Footer() {
       </a>
       <p>
         <a href="https://www.linkedin.com/in/danielleal98/" target="_blank">
-          <span>Daniel Leal</span>
+          <h3>Autor: Daniel Leal</h3>
         </a>
       </p>
     </FooterBase>

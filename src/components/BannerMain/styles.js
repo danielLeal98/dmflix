@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ContentAreaContainer = styled.section`
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ ContentAreaContainer.Item = styled.div`
 `;
 
 ContentAreaContainer.Category = styled.h1`
-  font-family: Press Start 2p;
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 60px;
@@ -101,7 +101,7 @@ export const BannerMainContainer = styled.section`
 `;
 
 export const WatchButton = styled.button`
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
@@ -113,8 +113,8 @@ export const WatchButton = styled.button`
   text-decoration: none;
   display: inline-block;
   border: 1px solid transparent;
-  color: var(--black);
-  background: var(--white);
+  color: var(--white);
+  background: var(--primary);
   border-color: var(--black);
   transition: opacity 0.3s;
   display: none;

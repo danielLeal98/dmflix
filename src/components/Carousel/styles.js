@@ -15,6 +15,7 @@ export const Title = styled.h3`
   @media (max-width: 800px) {
     font-size: 18px;
     padding: 10px;
+    display: block;
   }
 `;
 
@@ -27,7 +28,8 @@ export const ExtraLink = styled.a`
     opacity: 0.5;
   }
   @media (max-width: 800px) {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-bottom: 16px;
     margin-left: 0;
   }
@@ -50,6 +52,6 @@ export const VideoCardList = styled.ul`
 export const VideoCardGroupContainer = styled.section`
   color: white;
   min-height: 197px;
-  margin-left: 5%;
+  margin-left: 3%;
   margin-bottom: 16px;
 `;

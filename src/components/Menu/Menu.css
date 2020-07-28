@@ -20,8 +20,8 @@
   top: 0;
   left: 0;
   right: 0;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
 
   background: var(--black);
   border-bottom: 2px solid var(--primary);
@@ -55,6 +55,7 @@ body {
   text-decoration: none;
   display: inline-block;
   transition: opacity .3s;
+  background: var(--black);
 }
 .ButtonLink:hover,
 .ButtonLink:focus {
