@@ -1,2 +1,2 @@
-# reactFlix
- Projeto criado na imersão Alura
+# Dmflix Games
+ Projeto baseado no Layout do Netflix com o tema voltado para jogos da atualidade.
