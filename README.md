@@ -1,4 +1,3 @@
-# Games Flix
 <p align="center">
   <a href="https://gm-flix-git-master.danielleal98.vercel.app/">
     <img src="https://github.com/danielLeal98/gmFlix/blob/master/src/assets/img/logoGameFlix.png?raw=true" alt="Logo" width="200" >
