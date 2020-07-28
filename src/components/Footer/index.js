@@ -1,9 +1,19 @@
 import React from "react";
 import { FooterBase } from "./styles";
+import Logo from "../../assets/img/Logo.png";
 
 function Footer() {
   return (
     <FooterBase>
+      <p>
+        <img
+          style={{ margin: "5px" }}
+          src={Logo}
+          alt="Logo Site"
+          width="100"
+          height="50"
+        />
+      </p>
       <a href="https://www.linkedin.com/in/danielleal98/" target="_blank">
         <img
           style={{ margin: "5px" }}
