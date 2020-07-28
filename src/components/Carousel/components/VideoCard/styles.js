@@ -8,12 +8,12 @@ export const VideoCardContainer = styled.a`
   cursor: pointer;
   color: white;
   flex: 0 0 298px;
-  width: 298px;
-  height: 197px;
+  width: 300px;
+  height: 170px;
   background-image: ${({ url }) => `url(${url})`};
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 5px;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -23,6 +23,9 @@ export const VideoCardContainer = styled.a`
   &:hover,
   &:focus {
     opacity: 0.5;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
   }
 
   &:not(:first-child) {

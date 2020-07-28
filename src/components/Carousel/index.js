@@ -16,7 +16,7 @@ function Carousel({ ignoreFirstVideo, category }) {
         <>
           <Title style={{ backgroundColor: "transparent" }}>
             <ExtraLink href={categoryExtraLink.url} target="_blank">
-              <img src={categoryLogo} width="250px" height="70px" />
+              <img src={categoryLogo} width="200px" height="70px" />
             </ExtraLink>
           </Title>
         </>
