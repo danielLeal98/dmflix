@@ -15,7 +15,11 @@ function Footer() {
           height="50"
         />
       </p>
-      <a href="https://www.linkedin.com/in/danielleal98/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/danielleal98/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
           style={{ margin: "10px" }}
           src="https://image.flaticon.com/icons/png/512/174/174857.png"
@@ -24,7 +28,11 @@ function Footer() {
           height="50"
         />
       </a>
-      <a href="https://github.com/danielLeal98" target="_blank">
+      <a
+        href="https://github.com/danielLeal98"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
           style={{ margin: "10px" }}
           src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png"
@@ -33,11 +41,13 @@ function Footer() {
           height="50"
         />
       </a>
-      <p>
-        <a href="https://www.linkedin.com/in/danielleal98/" target="_blank">
-          <h3>Autor: Daniel Leal</h3>
-        </a>
-      </p>
+      <a
+        href="https://www.linkedin.com/in/danielleal98/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h3>Autor: Daniel Leal</h3>
+      </a>
     </FooterBase>
   );
 }
