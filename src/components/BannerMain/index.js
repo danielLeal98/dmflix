@@ -16,9 +16,11 @@ function getYouTubeId(youtubeURL) {
 export default function BannerMain({ videoTitle, videoDescription, url }) {
   const youTubeID = getYouTubeId(url);
   const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
+  const bgUrl2 =
+    "https://steamstore-a.akamaihd.net/public/images/v6/blue_body_repeat.jpg?v=2";
 
   return (
-    <BannerMainContainer backgroundImage={bgUrl}>
+    <BannerMainContainer backgroundImage={bgUrl2}>
       <ContentAreaContainer>
         <ContentAreaContainer.Item>
           <ContentAreaContainer.Title>{videoTitle}</ContentAreaContainer.Title>

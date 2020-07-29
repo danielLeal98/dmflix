@@ -101,20 +101,20 @@ export const BannerMainContainer = styled.section`
 `;
 
 export const WatchButton = styled.button`
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Makut", sans-serif;
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 300;
   font-size: 16px;
+  font-family: "Makut", Sans-serif;
   outline: none;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
   border: 1px solid transparent;
   color: var(--white);
-  background: var(--primary);
+  background: url("https://store.cloudflare.steamstatic.com/public/images/v6/home/background_spotlight.jpg");
   border-color: var(--black);
   transition: opacity 0.3s;
   display: none;
