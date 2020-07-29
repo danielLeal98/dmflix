@@ -14,9 +14,9 @@ function Carousel({ ignoreFirstVideo, category }) {
     <VideoCardGroupContainer>
       {categoryTitle && (
         <>
-          <Title style={{ backgroundColor: "transparent" }}>
+          <Title style={{ backgroundColor: categoryColor || "transparent" }}>
             <ExtraLink href={categoryExtraLink.url} target="_blank">
-              <img src={categoryLogo} width="200px" height="70px" />
+              {categoryTitle}
             </ExtraLink>
           </Title>
         </>

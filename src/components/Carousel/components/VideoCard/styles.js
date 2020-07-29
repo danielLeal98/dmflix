@@ -23,9 +23,9 @@ export const VideoCardContainer = styled.a`
   &:hover,
   &:focus {
     opacity: 0.5;
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(0.9); /* IE 9 */
+    -webkit-transform: scale(0.9); /* Safari 3-8 */
+    transform: scale(0.9);
   }
 
   &:not(:first-child) {
