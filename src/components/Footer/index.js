@@ -1,6 +1,6 @@
 import React from "react";
 import { FooterBase } from "./styles";
-import Logo from "../../assets/img/logoGameFlix.png";
+import Logo from "../../assets/img/logoGameFlixBlue.png";
 import "../Footer/footer.css";
 
 function Footer() {

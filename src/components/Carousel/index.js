@@ -14,7 +14,7 @@ function Carousel({ ignoreFirstVideo, category }) {
     <VideoCardGroupContainer>
       {categoryTitle && (
         <>
-          <Title style={{ backgroundColor: categoryColor || "transparent" }}>
+          <Title style={{ backgroundColor: "#2D4059" }}>
             <ExtraLink href={categoryExtraLink.url} target="_blank">
               {categoryTitle}
             </ExtraLink>
@@ -32,7 +32,7 @@ function Carousel({ ignoreFirstVideo, category }) {
               <VideoCard
                 videoTitle={video.titulo}
                 videoURL={video.url}
-                categoryColor={categoryColor}
+                categoryColor="#2D4059"
               />
             </SliderItem>
           );
