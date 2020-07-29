@@ -30,7 +30,7 @@ export const ExtraLink = styled.a`
   @media (max-width: 800px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 16px;
+    margin: 5px;
     margin-left: 0;
   }
 `;
