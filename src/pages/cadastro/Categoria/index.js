@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PageDefault from "../../../components/PageDefault";
 import { Link } from "react-router-dom";
 import FormField from "../../../components/FormField";
@@ -23,7 +23,19 @@ function CadastroCategoria() {
   function handleChange(info) {
     setValue(info.target.getAttribute("name"), info.target.value);
   }
-
+  useEffect(() => {
+    if (window.location.href.includes("localhost")) {
+      const URL = "http://localhost:3003/categorias";
+      fetch(URL).then(async (reponse) => {
+        if (reponse.ok) {
+          const resposta = await reponse.json();
+          setCategorias(resposta);
+          return;
+        }
+        throw new Error("Não foi possível pegar os dados");
+      });
+    }
+  }, []);
   return (
     <PageDefault>
       <h1>Cadastro de Categoria: {values.nome}</h1>
