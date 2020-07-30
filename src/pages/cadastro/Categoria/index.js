@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import PageDefault from "../../../components/PageDefault";
 import { Link } from "react-router-dom";
 import FormField from "../../../components/FormField";
+import Button from "../../../components/Button";
+import "../../../components/Menu/Menu.css";
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -40,13 +42,14 @@ function CadastroCategoria() {
         />
 
         <FormField
+          type="textarea"
           label="Descrição"
           value={values.descricao}
           name="descricao"
           onChange={handleChange}
         />
 
-        <button>Cadastrar</button>
+        <Button className="ButtonLink">Cadastrar</Button>
       </form>
 
       <ul>
