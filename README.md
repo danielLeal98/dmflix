@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://gm-flix-git-master.danielleal98.vercel.app/">
-    <img src="https://github.com/danielLeal98/gmFlix/blob/master/src/assets/img/logoGameFlix.png?raw=true" alt="Logo" width="200" >
+    <img src="https://github.com/danielLeal98/gmFlix/blob/master/src/assets/img/logoGameFlixBlue.png?raw=true" alt="Logo" width="200" >
   </a>
 </p>
 
@@ -12,8 +12,8 @@ O GamesFlix é uma aplicação voltada para o estudo de ReactJs baseado em Games
 ## 📷 Aplicação
 
 <p align="center">
-  <img src="https://github.com/danielLeal98/gmFlix/blob/master/src/assets/img/gmflix-header.png?raw=true" width="800" alt="header">
-  <img src="https://github.com/danielLeal98/gmFlix/blob/master/src/assets/img/gmflix-body.png?raw=true" width="800" alt="body">
+  <img src="https://github.com/danielLeal98/gmFlix/blob/master/src/assets/img/gmflix-Blue-header.png?raw=true" width="800" alt="header">
+  <img src="https://github.com/danielLeal98/gmFlix/blob/master/src/assets/img/gmflix-Blue-body.png?raw=true" width="800" alt="body">
 </p>
 
 >  Ao clicar na Imagem do jogo você será redirecionado para o site da empresa e clicando nos videos você será redirecionado para o video no Youtube.
