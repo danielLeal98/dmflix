@@ -30,7 +30,6 @@ function Home() {
                   "Como realizar seus sonhos e se tornar um jogador profissional de games? Veja abaixo um pouco sobre todos os jogos da atualidade."
                 }
               />
-
               <Carousel ignoreFirstVideo category={initialValues[0]} />
             </div>
           );
