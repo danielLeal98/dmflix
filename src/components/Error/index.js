@@ -11,10 +11,13 @@ function Error404() {
     <div className="main">
       <Menu />
       <div className="mainError">
-        <img src={img404} className="imgError" />
+        <img src={img404} className="imgError" alt="Error 404" />
         <Link to="/">
           <ButtonLink className="buttonBack">
-            <img src="https://img.icons8.com/cotton/64/000000/dog-house--v2.png" />
+            <img
+              src="https://img.icons8.com/cotton/64/000000/dog-house--v2.png"
+              alt="Back"
+            />
           </ButtonLink>
         </Link>
       </div>

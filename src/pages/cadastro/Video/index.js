@@ -69,10 +69,16 @@ function CadastroVideo() {
 
         <DivButton>
           <Link to="/">
-            <img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" />
+            <img
+              src="https://img.icons8.com/cotton/64/000000/circled-left-2.png"
+              alt="Back"
+            />
           </Link>
           <ButtonCadastrar type="submit">
-            <img src="https://img.icons8.com/cotton/64/000000/circled-chevron-down.png" />
+            <img
+              src="https://img.icons8.com/cotton/64/000000/circled-chevron-down.png"
+              alt="Save"
+            />
           </ButtonCadastrar>
         </DivButton>
       </form>
