@@ -20,11 +20,13 @@ function Home() {
     <PageDefault to="/cadastro/video" textButton="Novo Vídeo" paddingAll={0}>
       {initialValues.length === 0 && <div>Loading...</div>}
       {initialValues.map((categoria, indice) => {
+        alert(initialValues[0].videos[0]);
+        console.log(initialValues[0].videos[0].titulo);
         if (indice === 0) {
           return (
             <div key={categoria.id}>
               <BannerMain
-                videoTitle={initialValues[0].videos[0].titulo}
+                videoTitle="Seja bem vindo ao GamesFlix o portal com o trailer dos melhores jogos por gênero!"
                 url={initialValues[0].videos[0].url}
                 videoDescription={
                   "Como realizar seus sonhos e se tornar um jogador profissional de games? Veja abaixo um pouco sobre todos os jogos da atualidade."
