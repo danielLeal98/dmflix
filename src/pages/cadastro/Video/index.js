@@ -17,6 +17,7 @@ function CadastroVideo() {
   useEffect(() => {
     categoriasRepository.getAll().then((categoriasFromServer) => {
       setCategorias(categoriasFromServer);
+      console.log(categoriasFromServer);
     });
   }, []);
 
@@ -39,6 +40,7 @@ function CadastroVideo() {
             })
             .then(() => {
               console.log("Cadastrou com sucesso!");
+              alert("Cadastrou com sucesso!");
               history.push("/");
             });
         }}
@@ -69,9 +71,9 @@ function CadastroVideo() {
           <Link to="/">
             <img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" />
           </Link>
-          <Link to="/categorias">
+          <ButtonCadastrar type="submit">
             <img src="https://img.icons8.com/cotton/64/000000/circled-chevron-down.png" />
-          </Link>
+          </ButtonCadastrar>
         </DivButton>
       </form>
       <ul>
