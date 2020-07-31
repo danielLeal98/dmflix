@@ -11,7 +11,7 @@ const Button = styled.button`
   font-size: 16px;
   text-decoration: none;
   color: #d9d9d9;
-  opacity: 0.5;
+  opacity: 0.7;
   cursor: pointer;
   outline: none;
   transition: opacity 0.3s;
