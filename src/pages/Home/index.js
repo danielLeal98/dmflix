@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Menu from "../../components/Menu";
 import dadosIniciais from "../../data/dados_iniciais.json";
 import BannerMain from "../../components/BannerMain";
 import Carousel from "../../components/Carousel";
 import Footer from "../../components/Footer";
+import categoriasRepository from "../../repositories/categorias";
+import PageDefault from "../../components/PageDefault";
 
 function Home() {
+  const [initialValues, setinitialValues] = useState([]);
+  useEffect(() => {
+    categoriasRepository
+      .getAllWithVideos()
+      .then((categoriasComVideos) => {
+        setinitialValues(categoriasComVideos);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
   return (
-    <div style={{ background: "#141414" }}>
+    <PageDefault>
       <Menu textButton="Novo Vídeo" to="/cadastro/video" />
 
       <BannerMain
@@ -27,9 +40,7 @@ function Home() {
       <Carousel category={dadosIniciais.categorias[3]} />
 
       <Carousel category={dadosIniciais.categorias[4]} />
-
-      <Footer />
-    </div>
+    </PageDefault>
   );
 }
 

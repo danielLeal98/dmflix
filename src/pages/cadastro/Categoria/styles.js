@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const ButtonCadastrar = styled.button`
   padding: 16px 24px;
   box-sizing: border-box;
-  background-color: var(--primary);
-  border: 1px solid #d9d9d9;
+  background-color: transparent;
+  border: none;
   border-radius: 4px;
   font-weight: bold;
   font-size: 16px;
@@ -57,3 +57,4 @@ export const DivButton = styled.div`
   @media (max-width: 800px) {
   }
 `;
+export const Img = styled.img``;

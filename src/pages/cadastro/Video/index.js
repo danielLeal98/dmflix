@@ -1,61 +1,69 @@
 import React, { useState, useEffect } from "react";
 import PageDefault from "../../../components/PageDefault";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import FormField from "../../../components/FormField";
-import SelectForm from "../../../components/SelectForm";
+import videosRepository from "../../../repositories/videos";
+import categoriasRepository from "../../../repositories/categorias";
 import { ButtonCadastrar, DivButton, H1 } from "../Categoria/styles";
+import useForm from "../../../hooks/useForm";
 import "../../../components/Menu/Menu.css";
 
 function CadastroVideo() {
-  const valoresIniciais = {
-    nome: "",
-    descricao: "",
-  };
-  const doisPontos = ":";
+  const history = useHistory();
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
+  const categoryTitles = categorias.map(({ titulo }) => titulo);
+  const { handleChange, values } = useForm({});
 
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value, //nome: 'valor'
-    });
-  }
-
-  function handleChange(info) {
-    setValue(info.target.getAttribute("name"), info.target.value);
-  }
   useEffect(() => {
-    if (window.location.href.includes("localhost")) {
-      const URL = "http://localhost:8080/videos";
-      fetch(URL).then(async (reponse) => {
-        if (reponse.ok) {
-          const resposta = await reponse.json();
-          setCategorias(resposta);
-          return;
-        }
-        throw new Error("Não foi possível pegar os dados");
-      });
-    }
+    categoriasRepository.getAll().then((categoriasFromServer) => {
+      setCategorias(categoriasFromServer);
+    });
   }, []);
+
   return (
     <PageDefault textButton="Nova Categoria" to="/cadastro/categoria">
       <H1>Cadastro de Video: {values.nome}</H1>
       <form
-        onSubmit={function handleSubmit(info) {
-          info.preventDefault();
-          setCategorias([...categorias, values]);
-          setValues(valoresIniciais);
+        onSubmit={(event) => {
+          event.preventDefault();
+
+          const categoriaEscolhida = categorias.find(
+            (categoria) => categoria.titulo === values.categoria
+          );
+
+          videosRepository
+            .create({
+              titulo: values.titulo,
+              url: values.url,
+              categoriaId: categoriaEscolhida.id,
+            })
+            .then(() => {
+              console.log("Cadastrou com sucesso!");
+              history.push("/");
+            });
         }}
       >
         <FormField
-          label="Nome do Vídeo"
-          value={values.nome}
-          name="nome"
+          label="Título"
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
-        <SelectForm />
+        <FormField
+          label="URL"
+          name="url"
+          value={values.url}
+          onChange={handleChange}
+        />
+
+        <FormField
+          label="Categoria"
+          name="categoria"
+          value={values.categoria}
+          onChange={handleChange}
+          suggestions={categoryTitles}
+        />
 
         <DivButton>
           <Link to="/">
