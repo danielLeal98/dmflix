@@ -20,26 +20,27 @@ function Home() {
       });
   }, []);
   return (
-    <PageDefault>
-      <Menu textButton="Novo Vídeo" to="/cadastro/video" />
+    <PageDefault to="/cadastro/video" textButton="Novo Vídeo" paddingAll={0}>
+      {initialValues.length === 0 && <div>Loading...</div>}
+      {initialValues.map((categoria, indice) => {
+        if (indice === 0) {
+          return (
+            <div key={categoria.id}>
+              <BannerMain
+                videoTitle={initialValues[0].videos[0].titulo}
+                url={initialValues[0].videos[0].url}
+                videoDescription={
+                  "Como realizar seus sonhos e se tornar um jogador profissional de games? Veja abaixo um pouco sobre todos os jogos da atualidade."
+                }
+              />
 
-      <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={
-          "Como realizar seus sonhos e se tornar um jogador profissional de games? Veja abaixo um pouco sobre todos os jogos da atualidade."
+              <Carousel ignoreFirstVideo category={initialValues[0]} />
+            </div>
+          );
         }
-      />
 
-      <Carousel ignoreFirstVideo category={dadosIniciais.categorias[0]} />
-
-      <Carousel category={dadosIniciais.categorias[1]} />
-
-      <Carousel category={dadosIniciais.categorias[2]} />
-
-      <Carousel category={dadosIniciais.categorias[3]} />
-
-      <Carousel category={dadosIniciais.categorias[4]} />
+        return <Carousel key={categoria.id} category={categoria} />;
+      })}
     </PageDefault>
   );
 }
