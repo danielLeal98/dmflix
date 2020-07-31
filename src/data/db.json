@@ -45,7 +45,7 @@
         "url": "https://www.alura.com.br/cursos-online-front-end"
       }
     }
-   ],
+  ],
   "videos": [
     {
       "id": 1,
@@ -113,7 +113,8 @@
       "titulo": "FIFA 2020",
       "url": "https://www.youtube.com/watch?v=vgQNOIhRsV4"
     },
-    {"id": 12,
+    {
+      "id": 12,
       "categoriaId": 2,
       "titulo": "NBA 2K20",
       "url": "https://www.youtube.com/watch?v=FQ7WBnSvjIo"
@@ -123,98 +124,216 @@
       "categoriaId": 2,
       "titulo": "Madden NFL 21",
       "url": "https://www.youtube.com/watch?v=kfEUX1fVy5A"
-    }, 
+    },
     {
       "id": 14,
       "categoriaId": 2,
       "titulo": "Captain Tsubasa Rise of New Champions",
       "url": "https://www.youtube.com/watch?v=ZeC-KRARZtk"
-    },        
+    },
     {
       "id": 15,
       "categoriaId": 2,
       "titulo": "Pga Tour 2K21",
       "url": "https://www.youtube.com/watch?v=UsfYeLABYgo"
     },
-    {"id": 16,
+    {
+      "id": 16,
       "categoriaId": 2,
       "titulo": "Wwe 2K20",
       "url": "https://www.youtube.com/watch?v=QwCV-Cuvko0"
     },
-    {"id": 17,
+    {
+      "id": 17,
       "categoriaId": 2,
       "titulo": "UFC 4",
       "url": "https://www.youtube.com/watch?v=5epQZVC6F3Y"
     },
-    {"id": 18,
+    {
+      "id": 18,
       "categoriaId": 2,
       "titulo": "Day One Edition Skater XL",
       "url": "https://www.youtube.com/watch?v=ZcQcZqiMUiE"
     },
-    {"id": 19,
+    {
+      "id": 19,
       "categoriaId": 2,
       "titulo": "Golf Club 2",
       "url": "https://www.youtube.com/watch?v=HWCz66FFHY0"
     },
-    {"id": 20,
+    {
+      "id": 20,
       "categoriaId": 3,
       "titulo": "TEKKEN 7",
       "url": "https://www.youtube.com/watch?v=sjj4wJO1tBo"
     },
-    {"id": 21,
+    {
+      "id": 21,
       "categoriaId": 3,
       "titulo": "SPIDER MAN 2 MILES MORALES",
       "url": "https://www.youtube.com/watch?v=VoPt5wSazHE"
     },
-    {"id": 22,
+    {
+      "id": 22,
       "categoriaId": 3,
       "titulo": "Street Fighter V",
       "url": "https://www.youtube.com/watch?v=0nFd7Iylj5A"
     },
-    {"id": 23,
+    {
+      "id": 23,
       "categoriaId": 3,
       "titulo": "MORTAL KOMBAT 11 Trailer",
       "url": "https://www.youtube.com/watch?v=bxFoRCvEjUA"
     },
-    {"id": 24,
+    {
+      "id": 24,
       "categoriaId": 3,
       "titulo": "DRAGON BALL FighterZ",
       "url": "https://www.youtube.com/watch?v=YNAfOG4GfFQ"
     },
-    {"id": 25,
+    {
+      "id": 25,
       "categoriaId": 3,
       "titulo": "JUMP FORCE",
       "url": "https://www.youtube.com/watch?v=vGHxgyXy12k"
     },
-    {"id": 26,
+    {
+      "id": 26,
       "categoriaId": 3,
       "titulo": "Injustice™ 2",
       "url": "https://www.youtube.com/watch?v=oDav-JfidL0"
     },
-    {"id": 27,
+    {
+      "id": 27,
       "categoriaId": 3,
       "titulo": "Streets of Rage 4",
       "url": "https://www.youtube.com/watch?v=j_JtczD-9Ko"
     },
-    {"id": 28,
+    {
+      "id": 28,
       "categoriaId": 3,
       "titulo": "THE KING OF FIGHTERS XIII STEAM EDITION",
       "url": "https://www.youtube.com/watch?v=vAGxK7GnDLI"
     },
-    {"id": 29,
+    {
+      "id": 29,
       "categoriaId": 3,
       "titulo": "Brawlhalla",
       "url": "https://www.youtube.com/watch?v=fnd71bqiiW0"
     },
-    {"id": 30,
+    {
+      "id": 30,
       "categoriaId": 3,
       "titulo": "SOULCALIBUR VI",
       "url": "https://www.youtube.com/watch?v=kOq5dVigDGU"
     },
-    {"id": 31,
+    {
+      "id": 31,
       "categoriaId": 3,
       "titulo": "DEAD OR ALIVE 6",
       "url": "https://www.youtube.com/watch?v=_-ZZzvxAwtk"
-    }    
+    },
+    {
+      "id": 32,
+      "categoriaId": 4,
+      "titulo": "FINAL FANTASY XIV Online",
+      "url": "https://www.youtube.com/watch?v=2XbxPsWFyU8"
+    },
+    {
+      "id": 33,
+      "categoriaId": 4,
+      "titulo": "The Elder Scrolls® Online",
+      "url": "https://www.youtube.com/watch?v=uq1o2VG1ogY"
+    },
+    {
+      "id": 34,
+      "categoriaId": 4,
+      "titulo": "Path of Exile",
+      "url": "https://www.youtube.com/watch?v=brZT-Qdg8TY"
+    },
+    {
+      "id": 35,
+      "categoriaId": 4,
+      "titulo": "Albion Online",
+      "url": "https://www.youtube.com/watch?v=eBU_Fxd0Jf4"
+    },
+    {
+      "id": 36,
+      "categoriaId": 4,
+      "titulo": "Digimon Masters Online",
+      "url": "https://www.youtube.com/watch?v=eUWDJP46YeA"
+    },
+    {
+      "id": 37,
+      "categoriaId": 4,
+      "titulo": "Star Trek Online",
+      "url": "https://www.youtube.com/watch?v=79YrRMwgcfA"
+    },
+    {
+      "id": 38,
+      "categoriaId": 4,
+      "titulo": "World of Warcraft 3",
+      "url": "https://www.youtube.com/watch?v=d_sseanj5lw"
+    },
+    {
+      "id": 39,
+      "categoriaId": 4,
+      "titulo": "Black Desert Online SA",
+      "url": "https://www.youtube.com/watch?v=DD4zMOvRrzM"
+    },
+    {
+      "id": 40,
+      "categoriaId": 5,
+      "titulo": "Euro Truck Simulator 2",
+      "url": "https://www.youtube.com/watch?v=xlTuC18xVII"
+    },
+    {
+      "id": 41,
+      "categoriaId": 5,
+      "titulo": "Drift19",
+      "url": "https://www.youtube.com/watch?v=3t8m7Gwy49g"
+    },
+    {
+      "id": 42,
+      "categoriaId": 5,
+      "titulo": "Gran Turismo 7",
+      "url": "https://www.youtube.com/watch?v=oz-O74SmTSQ"
+    },
+    {
+      "id": 43,
+      "categoriaId": 5,
+      "titulo": "Forza Horizon 4",
+      "url": "https://www.youtube.com/watch?v=zJ477xAIlgU"
+    },
+    {
+      "id": 44,
+      "categoriaId": 5,
+      "titulo": "Onrush",
+      "url": "https://www.youtube.com/watch?v=-gpcfmFT3jo"
+    },
+    {
+      "id": 45,
+      "categoriaId": 5,
+      "titulo": "Assetto Corsa Competizione",
+      "url": "https://www.youtube.com/watch?v=CYncAnd31Q8"
+    },
+    {
+      "id": 46,
+      "categoriaId": 5,
+      "titulo": "Automobilista 2",
+      "url": "https://www.youtube.com/watch?v=JVg1ftqwd20"
+    },
+    {
+      "id": 47,
+      "categoriaId": 5,
+      "titulo": "Project CARS 3",
+      "url": "https://www.youtube.com/watch?v=-LgrvjJsP8Q"
+    },
+    {
+      "id": 48,
+      "categoriaId": 5,
+      "titulo": "TT Isle of Man 2",
+      "url": "https://www.youtube.com/watch?v=7G6c6jOw4K8"
+    }
   ]
 }
