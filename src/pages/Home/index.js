@@ -25,7 +25,7 @@ function Home() {
             <div key={categoria.id}>
               <BannerMain
                 videoTitle="Seja bem vindo ao GamesFlix o portal com o trailer dos melhores jogos por gênero!"
-                url={initialValues[0].videos[0].url}
+                url={"https://youtu.be/ycvX_48RYSA"}
                 videoDescription={
                   "Como realizar seus sonhos e se tornar um jogador profissional de games? Veja abaixo um pouco sobre todos os jogos da atualidade."
                 }
