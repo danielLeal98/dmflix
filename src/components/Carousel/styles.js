@@ -1,21 +1,29 @@
 import styled from "styled-components";
 
 export const Title = styled.h3`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 1;
-  margin-bottom: 16px;
   display: inline-block;
-  padding: 20px;
+  padding: 15px 15px;
+  margin-bottom: 8px;
   background: red;
+  border: 0;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  /* font-style: normal; */
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 1;
-  border-radius: 4px;
-
+  box-shadow: 0 0 20px 1px rgb(115, 115, 115, 0.7);
   @media (max-width: 800px) {
-    font-size: 18px;
     padding: 10px;
-    display: block;
+    margin-left: 2%;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 1.125rem;
   }
 `;
 

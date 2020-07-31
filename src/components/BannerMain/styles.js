@@ -101,12 +101,12 @@ export const BannerMainContainer = styled.section`
 `;
 
 export const WatchButton = styled.button`
-  font-family: "Mukta", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
-  font-weight: 300;
-  font-size: 18px;
   outline: none;
   border-radius: 5px;
   text-decoration: none;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PageDefault from "../../../components/PageDefault";
 import { Link } from "react-router-dom";
 import FormField from "../../../components/FormField";
-import Button from "../../../components/Button";
+import { ButtonCadastrar, DivButton, H1 } from "./styles";
 import "../../../components/Menu/Menu.css";
 
 function CadastroCategoria() {
@@ -10,6 +10,7 @@ function CadastroCategoria() {
     nome: "",
     descricao: "",
   };
+  const doisPontos = ":";
   const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
 
@@ -37,8 +38,8 @@ function CadastroCategoria() {
     }
   }, []);
   return (
-    <PageDefault>
-      <h1>Cadastro de Categoria: {values.nome}</h1>
+    <PageDefault textButton="Novo Vídeo" to="/cadastro/video">
+      <H1>Cadastro de Categoria: {values.nome}</H1>
       <form
         onSubmit={function handleSubmit(info) {
           info.preventDefault();
@@ -60,16 +61,20 @@ function CadastroCategoria() {
           name="descricao"
           onChange={handleChange}
         />
-
-        <Button className="ButtonLink">Cadastrar</Button>
+        <DivButton>
+          <Link to="/">
+            <img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" />
+          </Link>
+          <Link to="/categorias">
+            <img src="https://img.icons8.com/cotton/64/000000/circled-chevron-down.png" />
+          </Link>
+        </DivButton>
       </form>
-
       <ul>
         {categorias.map((categoria, index) => {
           return <li key={index + 1}>{categoria.nome}</li>;
         })}
       </ul>
-      <Link to="/">Ir para Home</Link>
     </PageDefault>
   );
 }

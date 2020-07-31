@@ -3,13 +3,12 @@
 }
 .mainError{
   display: flex;
-  height: 100vh;
+  height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;  
   background-image: url("https://store.cloudflare.steamstatic.com/public/images/v6/home/background_spotlight.jpg");
-  margin-bottom: -35px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -30,9 +29,9 @@
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
-  border: 1px solid white;
+  border: none;
   color: var(--white);
-  background: url("https://store.cloudflare.steamstatic.com/public/images/v6/home/background_spotlight.jpg");
+  background: none;
   border-color: var(--white);
   transition: opacity 0.3s;
   margin: 20px;

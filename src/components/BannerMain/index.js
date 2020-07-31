@@ -32,7 +32,11 @@ export default function BannerMain({ videoTitle, videoDescription, url }) {
 
         <ContentAreaContainer.Item>
           <VideoIframeResponsive youtubeID={youTubeID} />
-          <WatchButton>Assistir</WatchButton>
+          <WatchButton>
+            <a style={{ textDecoration: "none" }} href={url}>
+              Assistir
+            </a>
+          </WatchButton>
         </ContentAreaContainer.Item>
       </ContentAreaContainer>
     </BannerMainContainer>

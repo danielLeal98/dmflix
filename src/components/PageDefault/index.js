@@ -12,10 +12,10 @@ const Main = styled.main`
   padding-right: 3%;
 `;
 
-function PageDefault({ children }) {
+function PageDefault({ children, textButton, to }) {
   return (
     <>
-      <Menu />
+      <Menu textButton={textButton} to={to} />
       <Main>{children}</Main>
       <Footer />
     </>

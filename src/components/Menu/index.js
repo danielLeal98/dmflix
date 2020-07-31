@@ -5,14 +5,14 @@ import "./Menu.css";
 //import ButtonLink from "./ButtonLink";
 import Button from "../Button";
 
-function Menu() {
+function Menu({ textButton, to }) {
   return (
     <nav className="Menu">
       <Link to="/">
         <img className="Logo" src={Logo} alt="DMFLIX" />
       </Link>
-      <Button as={Link} className="ButtonLink" to="/cadastro/video">
-        Novo vídeo
+      <Button as={Link} className="ButtonLink" to={to}>
+        {textButton}
       </Button>
     </nav>
   );

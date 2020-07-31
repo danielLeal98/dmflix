@@ -13,7 +13,9 @@ function Error404() {
       <div className="mainError">
         <img src={img404} className="imgError" />
         <Link to="/">
-          <ButtonLink className="buttonBack">Home</ButtonLink>
+          <ButtonLink className="buttonBack">
+            <img src="https://img.icons8.com/cotton/64/000000/dog-house--v2.png" />
+          </ButtonLink>
         </Link>
       </div>
       <Footer />

@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 function Home() {
   return (
     <div style={{ background: "#141414" }}>
-      <Menu />
+      <Menu textButton="Novo Vídeo" to="/cadastro/video" />
 
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
