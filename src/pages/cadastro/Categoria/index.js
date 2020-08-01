@@ -5,6 +5,7 @@ import FormField from "../../../components/FormField";
 import { ButtonCadastrar, DivButton, H1, Img } from "./styles";
 import "../../../components/Menu/Menu.css";
 import useForm from "../../../hooks/useForm";
+import categoriasRepository from "../../../repositories/categorias";
 
 function CadastroCategoria() {
   const initialValues = {
@@ -20,6 +21,7 @@ function CadastroCategoria() {
         ? "http://localhost:3003/categorias"
         : "https://gmflix.herokuapp.com/categorias";
       fetch(URL).then(async (reponse) => {
+        console.log(URL);
         if (reponse.ok) {
           const resposta = await reponse.json();
           setCategorias(resposta);
@@ -36,7 +38,18 @@ function CadastroCategoria() {
         onSubmit={function handleSubmit(info) {
           info.preventDefault();
           setCategorias([...categorias, values]);
-          clearForm();
+          //clearForm();
+
+          categoriasRepository
+            .create({
+              nome: values.nome,
+              descricao: values.descricao,
+              cor: "#fafafa",
+            })
+            .then(() => {
+              alert("Categoria cadastrada com sucesso!");
+              //history.push("/");
+            });
         }}
       >
         <FormField
@@ -55,14 +68,6 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <FormField
-          label="Cor"
-          type="color"
-          name="cor"
-          value={values.cor}
-          onChange={handleChange}
-        />
-
         <DivButton>
           <Link to="/">
             <Img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" />
@@ -72,6 +77,7 @@ function CadastroCategoria() {
           </ButtonCadastrar>
         </DivButton>
       </form>
+      <h1>Categorias Cadastradas</h1>
       <ul>
         {categorias.map((categoria) => (
           <li key={`${categoria.titulo}`}>

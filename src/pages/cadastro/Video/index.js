@@ -23,7 +23,7 @@ function CadastroVideo() {
 
   return (
     <PageDefault textButton="Nova Categoria" to="/cadastro/categoria">
-      <H1>Cadastro de Video: {values.nome}</H1>
+      <H1>Cadastro de Video: {values.titulo}</H1>
       <form
         onSubmit={(event) => {
           event.preventDefault();
@@ -39,8 +39,7 @@ function CadastroVideo() {
               categoriaId: categoriaEscolhida.id,
             })
             .then(() => {
-              console.log("Cadastrou com sucesso!");
-              alert("Cadastrou com sucesso!");
+              alert("Vídeo cadastrado com sucesso!");
               history.push("/");
             });
         }}
@@ -82,9 +81,10 @@ function CadastroVideo() {
           </ButtonCadastrar>
         </DivButton>
       </form>
+      <h1>Categorias Cadastradas</h1>
       <ul>
         {categorias.map((categoria, index) => {
-          return <li key={index + 1}>{categoria.nome}</li>;
+          return <li key={index + 1}>{categoria.titulo}</li>;
         })}
       </ul>
     </PageDefault>

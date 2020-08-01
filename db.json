@@ -44,6 +44,24 @@
         "text": "Formação de Front End na Alura",
         "url": "https://www.alura.com.br/cursos-online-front-end"
       }
+    },
+    {
+      "id": 29,
+      "nome": "",
+      "descricao": "TESTE NOVAAAAAA Nova Categoria teste 01/08/2020 teste",
+      "cor": "#fafafa"
+    },
+    {
+      "id": 8,
+      "nome": "Mais uma categoria",
+      "descricao": "mais uma categoria sendo cadastrada de teste",
+      "cor": "#fafafa"
+    },
+    {
+      "nome": "pei pei pei",
+      "descricao": "teste pei pei pei",
+      "cor": "#fafafa",
+      "id": 30
     }
   ],
   "videos": [
@@ -346,6 +364,36 @@
       "url": "https://www.youtube.com/watch?v=5o2hSFkYYe8",
       "categoriaId": 3,
       "id": 50
+    },
+    {
+      "titulo": "Need for speed underground",
+      "url": "https://www.youtube.com/watch?v=3fI6dTObRGA",
+      "categoriaId": 5,
+      "id": 51
+    },
+    {
+      "titulo": "teste",
+      "url": "https://youtu.be/n94yk-PDnN4",
+      "categoriaId": 1,
+      "id": 52
+    },
+    {
+      "titulo": "Video Novo",
+      "url": "https://www.youtube.com/watch?v=2nH7xAMqD2g",
+      "categoriaId": 3,
+      "id": 53
+    },
+    {
+      "titulo": "dwdwsadsad",
+      "url": "https://youtu.be/n94yk-PDnN4",
+      "categoriaId": 4,
+      "id": 54
+    },
+    {
+      "titulo": "Teste de Video Novo123",
+      "url": "https://www.youtube.com/watch?v=2aXRXl4tPn0&list=RD2aXRXl4tPn0&start_radio=1",
+      "categoriaId": 2,
+      "id": 55
     }
   ]
 }
