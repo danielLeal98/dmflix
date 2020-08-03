@@ -36,7 +36,7 @@
       "id": 5
     }
   ],
-  "videos": [
+  "videos": 
     [
       {
          "titulo":"Seja bem vindo ao GamesFlix o portal com o trailer dos melhores jogos por gênero!",
@@ -313,5 +313,4 @@
          "createdAt":"2020-08-03T20:30:59.980Z"
       }
    ]
-  ]
 }
