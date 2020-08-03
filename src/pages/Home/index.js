@@ -2,17 +2,14 @@ import React, { useEffect, useState } from "react";
 import BannerMain from "../../components/BannerMain";
 import Carousel from "../../components/Carousel";
 import categoriasRepository from "../../repositories/categorias";
-import videosRepository from "../../repositories/videos";
 import PageDefault from "../../components/PageDefault";
 
 function Home() {
   const [initialValues, setinitialValues] = useState([]);
-  const [initialVideos, setinitialVideos] = useState([]);
   useEffect(() => {
     categoriasRepository
       .getAllWithVideos()
       .then((categoriasComVideos) => {
-        console.log(categoriasComVideos);
         setinitialValues(categoriasComVideos);
       })
       .catch((err) => {

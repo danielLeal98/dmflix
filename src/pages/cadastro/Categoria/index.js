@@ -51,7 +51,7 @@ function CadastroCategoria() {
             })
             .then(() => {
               window.location.reload(true);
-              //history.push("/");
+              history.push("/");
             });
         }}
       >
@@ -85,6 +85,8 @@ function CadastroCategoria() {
       <ul>
         {categorias.map((categoria, index) => (
           <li style={{ display: "flex" }} key={`${categoria.titulo}`}>
+            {console.log("To aquiii")}
+            {console.log(categorias)}
             <span>* {categoria.titulo}</span>
             <IconsTrash
               src={trashIcon}

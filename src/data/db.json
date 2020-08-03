@@ -1,248 +1,316 @@
 {
   "categorias": [
     {
-      "titulo": "FPS",
-      "link": "https://www.youtube.com/results?search_query=Jogos+fps+2020+pc",
-      "cor": "rgb(107, 91, 226)",
-      "logo": "https://www.k7-esports.com/uploads/1/1/2/8/112874503/published/counter-strike_2.png",
-      "link_extra": {
-        "text": "Tudo sobre Counter Strike Global Offensive",
-        "url": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
-      },
-      "videos": [
-        {
-          "titulo": "Seja bem vindo ao GamesFlix o portal com o trailer dos melhores jogos por gênero!",
-          "url": "https://www.youtube.com/watch?v=ycvX_48RYSA&t=3s"
-        },
-        {
-          "titulo": "CS GO",
-          "url": "https://www.youtube.com/watch?v=edYCtaNueQY"
-        },
-        {
-          "titulo": "PUBG",
-          "url": "https://www.youtube.com/watch?v=hU8oGKzVAmQ"
-        },
-        {
-          "titulo": "Tom Clancy's Rainbow Six Siege",
-          "url": "https://www.youtube.com/watch?v=wW4IR60mhJE"
-        },
-        {
-          "titulo": "Destiny 2",
-          "url": "https://www.youtube.com/watch?v=h-5S82ETKvI"
-        },
-        {
-          "titulo": "Grand Theft Auto V",
-          "url": "https://www.youtube.com/watch?v=QkkoHAzjnUs"
-        },
-        {
-          "titulo": "Call of Duty®: Warzone",
-          "url": "https://www.youtube.com/watch?v=0E44DClsX5Q"
-        },
-        {
-          "titulo": "Red Dead Redemption 2",
-          "url": "https://www.youtube.com/watch?v=gmA6MrX81z4"
-        }
-      ]
+      "titulo": "Fps",
+      "descricao": "Jogos de FPS",
+      "cor": "#fafafa",
+      "createdAt": "2020-08-03T20:21:34.233Z",
+      "id": 1
     },
     {
       "titulo": "Esportes",
-      "cor": "#119910",
-      "logo": "https://lolstatic-a.akamaihd.net/frontpage/apps/prod/playnow-global/pt_BR/328566a634ec929c4fc0ec5507c3b42a3bd4fb36/assets/img/lol-logo.png",
-      "link_extra": {
-        "text": "Tudo sobre League of Legends",
-        "url": "https://play.br.leagueoflegends.com/pt_BR"
-      },
-      "videos": [
-        {
-          "titulo": "eFootball PES 2020",
-          "url": "https://www.youtube.com/watch?v=_89i5H1zAeU"
-        },
-        {
-          "titulo": "FIFA 2020",
-          "url": "https://www.youtube.com/watch?v=vgQNOIhRsV4"
-        },
-        {
-          "titulo": "NBA 2K20",
-          "url": "https://www.youtube.com/watch?v=FQ7WBnSvjIo"
-        },
-        {
-          "titulo": "Madden NFL 21",
-          "url": "https://www.youtube.com/watch?v=kfEUX1fVy5A"
-        }, 
-        {
-          "titulo": "Captain Tsubasa Rise of New Champions",
-          "url": "https://www.youtube.com/watch?v=ZeC-KRARZtk"
-        },        
-        {
-          "titulo": "Pga Tour 2K21",
-          "url": "https://www.youtube.com/watch?v=UsfYeLABYgo"
-        },
-        {
-          "titulo": "Wwe 2K20",
-          "url": "https://www.youtube.com/watch?v=QwCV-Cuvko0"
-        },
-        {
-          "titulo": "UFC 4",
-          "url": "https://www.youtube.com/watch?v=5epQZVC6F3Y"
-        },
-        {
-          "titulo": "Day One Edition Skater XL",
-          "url": "https://www.youtube.com/watch?v=ZcQcZqiMUiE"
-        },
-        {
-          "titulo": "Golf Club 2",
-          "url": "https://www.youtube.com/watch?v=HWCz66FFHY0"
-        }    
-      ]
+      "descricao": "Jogos de Esporte",
+      "cor": "#fafafa",
+      "createdAt": "2020-08-03T20:29:16.357Z",
+      "id": 2
     },
     {
       "titulo": "Luta",
-      "cor": "rgb(42, 122, 228)",
-      "logo": "https://www.kombatakademy.com/wp-content/uploads/images/Mortal-Kombat-11-Logo-Alt.png",
-      "link_extra": {
-        "text": "Tudo sobre Mortal Kombat 11",
-        "url": "https://www.mortalkombat.com/pt-BR"
-      },
-      "videos": [
-        {
-          "titulo": "TEKKEN 7",
-          "url": "https://www.youtube.com/watch?v=sjj4wJO1tBo"
-        },
-        {
-          "titulo": "SPIDER MAN 2 MILES MORALES",
-          "url": "https://www.youtube.com/watch?v=VoPt5wSazHE"
-        },
-        {
-          "titulo": "Street Fighter V",
-          "url": "https://www.youtube.com/watch?v=0nFd7Iylj5A"
-        },
-        {
-          "titulo": "MORTAL KOMBAT 11 Trailer",
-          "url": "https://www.youtube.com/watch?v=bxFoRCvEjUA"
-        },
-        {
-          "titulo": "DRAGON BALL FighterZ",
-          "url": "https://www.youtube.com/watch?v=YNAfOG4GfFQ"
-        },
-        {
-          "titulo": "JUMP FORCE",
-          "url": "https://www.youtube.com/watch?v=vGHxgyXy12k"
-        },
-        {
-          "titulo": "Injustice™ 2",
-          "url": "https://www.youtube.com/watch?v=oDav-JfidL0"
-        },
-        {
-          "titulo": "Streets of Rage 4",
-          "url": "https://www.youtube.com/watch?v=j_JtczD-9Ko"
-        },
-        {
-          "titulo": "THE KING OF FIGHTERS XIII STEAM EDITION",
-          "url": "https://www.youtube.com/watch?v=vAGxK7GnDLI"
-        },
-        {
-          "titulo": "Brawlhalla",
-          "url": "https://www.youtube.com/watch?v=fnd71bqiiW0"
-        },
-        {
-          "titulo": "SOULCALIBUR VI",
-          "url": "https://www.youtube.com/watch?v=kOq5dVigDGU"
-        },
-        {
-          "titulo": "DEAD OR ALIVE 6",
-          "url": "https://www.youtube.com/watch?v=_-ZZzvxAwtk"
-        }
-      ]
+      "descricao": "Jogos de Luta",
+      "cor": "#fafafa",
+      "createdAt": "2020-08-03T20:29:31.562Z",
+      "id": 3
     },
     {
       "titulo": "MMORPG",
-      "cor": "#ff5b40",
-      "logo": "https://steamcdn-a.akamaihd.net/apps/dota2/images/nav/logo.png",
-      "link_extra": {
-        "text": "Tudo sobre Dota 2",
-        "url": "https://br.dota2.com/?l=portuguese"
-      },
-      "videos": [
-        {
-          "titulo": "FINAL FANTASY XIV Online",
-          "url": "https://www.youtube.com/watch?v=2XbxPsWFyU8"
-        },
-        {
-          "titulo": "The Elder Scrolls® Online",
-          "url": "https://www.youtube.com/watch?v=uq1o2VG1ogY"
-        },
-        {
-          "titulo": "Path of Exile",
-          "url": "https://www.youtube.com/watch?v=brZT-Qdg8TY"
-        },
-        {
-          "titulo": "Albion Online",
-          "url": "https://www.youtube.com/watch?v=eBU_Fxd0Jf4"
-        },
-        {
-          "titulo": "Digimon Masters Online",
-          "url": "https://www.youtube.com/watch?v=eUWDJP46YeA"
-        },
-        {
-          "titulo": "Star Trek Online",
-          "url": "https://www.youtube.com/watch?v=79YrRMwgcfA"
-        },
-        {
-          "titulo": "World of Warcraft 3",
-          "url": "https://www.youtube.com/watch?v=d_sseanj5lw"
-        },
-        {
-          "titulo": "Black Desert Online SA",
-          "url": "https://www.youtube.com/watch?v=DD4zMOvRrzM"
-        }
-      ]
+      "descricao": "Jogos de MMORPG",
+      "cor": "#fafafa",
+      "createdAt": "2020-08-03T20:30:05.348Z",
+      "id": 4
     },
     {
       "titulo": "Corrida",
-      "cor": "rgb(255, 165, 0)",
-      "logo": "https://www.pcspecialist.co.uk/images/landing/pcs/games/lp/fortnitelogo.png",
-      "link_extra": {
-        "text": "Tudo sobre Fortnite",
-        "url": "https://www.epicgames.com/fortnite/pt-BR/home"
+      "descricao": "Jogos de Corrida",
+      "cor": "#fafafa",
+      "createdAt": "2020-08-03T20:30:29.700Z",
+      "id": 5
+    }
+  ],
+  "videos": 
+    [
+      {
+         "titulo":"Seja bem vindo ao GamesFlix o portal com o trailer dos melhores jogos por gênero!",
+         "url":"https://www.youtube.com/watch?v=ycvX_48RYSA&t=3s",
+         "createdAt":"2020-08-03T20:21:34.233Z",
+         "categoriaId":1
       },
-      "videos": [
-        {
-          "titulo": "Euro Truck Simulator 2",
-          "url": "https://www.youtube.com/watch?v=xlTuC18xVII"
-        },
-        {
-          "titulo": "Drift19",
-          "url": "https://www.youtube.com/watch?v=3t8m7Gwy49g"
-        },
-        {
-          "titulo": "Gran Turismo 7",
-          "url": "https://www.youtube.com/watch?v=oz-O74SmTSQ"
-        },
-        {
-          "titulo": "Forza Horizon 4",
-          "url": "https://www.youtube.com/watch?v=zJ477xAIlgU"
-        },
-        {
-          "titulo": "Onrush",
-          "url": "https://www.youtube.com/watch?v=-gpcfmFT3jo"
-        },
-        {
-          "titulo": "Assetto Corsa Competizione",
-          "url": "https://www.youtube.com/watch?v=CYncAnd31Q8"
-        },
-        {
-          "titulo": "Automobilista 2",
-          "url": "https://www.youtube.com/watch?v=JVg1ftqwd20"
-        },
-        {
-          "titulo": "Project CARS 3",
-          "url": "https://www.youtube.com/watch?v=-LgrvjJsP8Q"
-        },
-        {
-          "titulo": "TT Isle of Man 2",
-          "url": "https://www.youtube.com/watch?v=7G6c6jOw4K8"
-        }
-      ]
-    }   
-  ]
+      {
+         "titulo":"CS GO",
+         "url":"https://www.youtube.com/watch?v=edYCtaNueQY",
+         "createdAt":"2020-08-03T20:21:34.233Z",
+         "categoriaId":1
+      },
+      {
+         "titulo":"PUBG",
+         "url":"https://www.youtube.com/watch?v=hU8oGKzVAmQ"
+      },
+      {
+         "titulo":"Tom Clancy's Rainbow Six Siege",
+         "url":"https://www.youtube.com/watch?v=wW4IR60mhJE",
+         "createdAt":"2020-08-03T20:21:34.233Z",
+         "categoriaId":1
+      },
+      {
+         "titulo":"Destiny 2",
+         "url":"https://www.youtube.com/watch?v=h-5S82ETKvI",
+         "createdAt":"2020-08-03T20:21:34.233Z",
+         "categoriaId":1
+      },
+      {
+         "titulo":"Grand Theft Auto V",
+         "url":"https://www.youtube.com/watch?v=QkkoHAzjnUs",
+         "createdAt":"2020-08-03T20:21:34.233Z",
+         "categoriaId":1
+      },
+      {
+         "titulo":"Call of Duty®: Warzone",
+         "url":"https://www.youtube.com/watch?v=0E44DClsX5Q",
+         "createdAt":"2020-08-03T20:21:34.233Z",
+         "categoriaId":1
+      },
+      {
+         "titulo":"Red Dead Redemption 2",
+         "url":"https://www.youtube.com/watch?v=gmA6MrX81z4",
+         "createdAt":"2020-08-03T20:21:34.233Z",
+         "categoriaId":1
+      },
+      {
+         "titulo":"eFootball PES 2020",
+         "url":"https://www.youtube.com/watch?v=_89i5H1zAeU",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":2
+      },
+      {
+         "titulo":"FIFA 2020",
+         "url":"https://www.youtube.com/watch?v=vgQNOIhRsV4",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":2
+      },
+      {
+         "titulo":"NBA 2K20",
+         "url":"https://www.youtube.com/watch?v=FQ7WBnSvjIo",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":2
+      },
+      {
+         "titulo":"Madden NFL 21",
+         "url":"https://www.youtube.com/watch?v=kfEUX1fVy5A",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":2
+      },
+      {
+         "titulo":"Captain Tsubasa Rise of New Champions",
+         "url":"https://www.youtube.com/watch?v=ZeC-KRARZtk",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":2
+      },
+      {
+         "titulo":"Pga Tour 2K21",
+         "url":"https://www.youtube.com/watch?v=UsfYeLABYgo",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":2
+      },
+      {
+         "titulo":"Wwe 2K20",
+         "url":"https://www.youtube.com/watch?v=QwCV-Cuvko0",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":2
+      },
+      {
+         "titulo":"UFC 4",
+         "url":"https://www.youtube.com/watch?v=5epQZVC6F3Y",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":2
+      },
+      {
+         "titulo":"Day One Edition Skater XL",
+         "url":"https://www.youtube.com/watch?v=ZcQcZqiMUiE",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":2
+      },
+      {
+         "titulo":"Golf Club 2",
+         "url":"https://www.youtube.com/watch?v=HWCz66FFHY0",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":2
+      },
+      {
+         "titulo":"FINAL FANTASY XIV Online",
+         "url":"https://www.youtube.com/watch?v=2XbxPsWFyU8",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":4
+      },
+      {
+         "titulo":"The Elder Scrolls® Online",
+         "url":"https://www.youtube.com/watch?v=uq1o2VG1ogY",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":4
+      },
+      {
+         "titulo":"Path of Exile",
+         "url":"https://www.youtube.com/watch?v=brZT-Qdg8TY",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":4
+      },
+      {
+         "titulo":"Albion Online",
+         "url":"https://www.youtube.com/watch?v=eBU_Fxd0Jf4",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":4
+      },
+      {
+         "titulo":"Digimon Masters Online",
+         "url":"https://www.youtube.com/watch?v=eUWDJP46YeA",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":4
+      },
+      {
+         "titulo":"Star Trek Online",
+         "url":"https://www.youtube.com/watch?v=79YrRMwgcfA",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":4
+      },
+      {
+         "titulo":"World of Warcraft 3",
+         "url":"https://www.youtube.com/watch?v=d_sseanj5lw",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":4
+      },
+      {
+         "titulo":"Black Desert Online SA",
+         "url":"https://www.youtube.com/watch?v=DD4zMOvRrzM",
+         "createdAt":"2020-08-03T20:29:31.562Z",
+         "categoriaId":4
+      },
+      {
+         "titulo":"Euro Truck Simulator 2",
+         "url":"https://www.youtube.com/watch?v=xlTuC18xVII",
+         "createdAt":"2020-08-03T20:30:59.980Z",
+         "categoriaId":5
+      },
+      {
+         "titulo":"Drift19",
+         "url":"https://www.youtube.com/watch?v=3t8m7Gwy49g",
+         "createdAt":"2020-08-03T20:30:59.980Z",
+         "categoriaId":5
+      },
+      {
+         "titulo":"Gran Turismo 7",
+         "url":"https://www.youtube.com/watch?v=oz-O74SmTSQ",
+         "createdAt":"2020-08-03T20:30:59.980Z",
+         "categoriaId":5
+      },
+      {
+         "titulo":"Forza Horizon 4",
+         "url":"https://www.youtube.com/watch?v=zJ477xAIlgU",
+         "createdAt":"2020-08-03T20:30:59.980Z",
+         "categoriaId":5
+      },
+      {
+         "titulo":"Onrush",
+         "url":"https://www.youtube.com/watch?v=-gpcfmFT3jo",
+         "createdAt":"2020-08-03T20:30:59.980Z",
+         "categoriaId":5
+      },
+      {
+         "titulo":"Assetto Corsa Competizione",
+         "url":"https://www.youtube.com/watch?v=CYncAnd31Q8",
+         "createdAt":"2020-08-03T20:30:59.980Z",
+         "categoriaId":5
+      },
+      {
+         "titulo":"Automobilista 2",
+         "url":"https://www.youtube.com/watch?v=JVg1ftqwd20",
+         "createdAt":"2020-08-03T20:30:59.980Z",
+         "categoriaId":5
+      },
+      {
+         "titulo":"Project CARS 3",
+         "url":"https://www.youtube.com/watch?v=-LgrvjJsP8Q",
+         "createdAt":"2020-08-03T20:30:59.980Z",
+         "categoriaId":5
+      },
+      {
+         "titulo":"TT Isle of Man 2",
+         "url":"https://www.youtube.com/watch?v=7G6c6jOw4K8",
+         "createdAt":"2020-08-03T20:30:59.980Z",
+         "categoriaId":5
+      },
+      {
+         "titulo":"TEKKEN 7",
+         "url":"https://www.youtube.com/watch?v=sjj4wJO1tBo",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      },
+      {
+         "titulo":"SPIDER MAN 2 MILES MORALES",
+         "url":"https://www.youtube.com/watch?v=VoPt5wSazHE",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      },
+      {
+         "titulo":"Street Fighter V",
+         "url":"https://www.youtube.com/watch?v=0nFd7Iylj5A",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      },
+      {
+         "titulo":"MORTAL KOMBAT 11 Trailer",
+         "url":"https://www.youtube.com/watch?v=bxFoRCvEjUA",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      },
+      {
+         "titulo":"DRAGON BALL FighterZ",
+         "url":"https://www.youtube.com/watch?v=YNAfOG4GfFQ",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      },
+      {
+         "titulo":"JUMP FORCE",
+         "url":"https://www.youtube.com/watch?v=vGHxgyXy12k",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      },
+      {
+         "titulo":"Injustice™ 2",
+         "url":"https://www.youtube.com/watch?v=oDav-JfidL0",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      },
+      {
+         "titulo":"Streets of Rage 4",
+         "url":"https://www.youtube.com/watch?v=j_JtczD-9Ko",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      },
+      {
+         "titulo":"THE KING OF FIGHTERS XIII STEAM EDITION",
+         "url":"https://www.youtube.com/watch?v=vAGxK7GnDLI",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      },
+      {
+         "titulo":"Brawlhalla",
+         "url":"https://www.youtube.com/watch?v=fnd71bqiiW0",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      },
+      {
+         "titulo":"SOULCALIBUR VI",
+         "url":"https://www.youtube.com/watch?v=kOq5dVigDGU",
+         "categoriaId":3,
+         "createdAt":"2020-08-03T20:30:59.980Z"
+      }
+   ]
 }

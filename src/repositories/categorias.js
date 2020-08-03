@@ -1,14 +1,12 @@
 import config from "../config";
 
 const URL_CATEGORIES = `${config.URL_BACKEND}/categorias`;
-const URL_VIDEOS = `${config.URL_BACKEND}/videos`;
 
 function getAll() {
   return fetch(`${URL_CATEGORIES}`)
     .then(async (response) => {
       if (response.ok) {
         const result = await response.json();
-        console.log(result);
         return result;
       }
 
@@ -24,7 +22,6 @@ function getAllWithVideos() {
     .then(async (response) => {
       if (response.ok) {
         const result = await response.json();
-        console.log(result);
         return result;
       }
 

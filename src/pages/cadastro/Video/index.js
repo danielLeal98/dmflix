@@ -56,7 +56,6 @@ function CadastroVideo() {
   useEffect(() => {
     categoriasRepository.getAll().then((categoriasFromServer) => {
       setCategorias(categoriasFromServer);
-      console.log(categoriasFromServer);
     });
   }, []);
 
@@ -97,7 +96,7 @@ function CadastroVideo() {
               })
               .then(() => {
                 alert("Vídeo cadastrado com sucesso em Produção!");
-                //history.push("/");
+                history.push("/");
               });
           }
         }}
