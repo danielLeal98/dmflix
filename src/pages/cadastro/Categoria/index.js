@@ -42,7 +42,7 @@ function CadastroCategoria() {
 
           categoriasRepository
             .create({
-              nome: values.nome,
+              titulo: values.nome,
               descricao: values.descricao,
               cor: "#fafafa",
             })
