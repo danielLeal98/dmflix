@@ -15,7 +15,7 @@ function Carousel({ ignoreFirstVideo, category }) {
       {categoryTitle && (
         <>
           <Title style={{ backgroundColor: "#2D4059" }}>
-            <ExtraLink>{categoryTitle}</ExtraLink>
+            <ExtraLink>{categoryTitle.toUpperCase()}</ExtraLink>
           </Title>
         </>
       )}

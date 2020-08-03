@@ -58,3 +58,8 @@ export const DivButton = styled.div`
   }
 `;
 export const Img = styled.img``;
+export const IconsTrash = styled.img`
+  height: 26px;
+  width: 26px;
+  margin-left: 10px;
+`;

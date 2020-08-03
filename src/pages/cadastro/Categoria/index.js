@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from "react";
 import PageDefault from "../../../components/PageDefault";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import FormField from "../../../components/FormField";
-import { ButtonCadastrar, DivButton, H1, Img } from "./styles";
+import { ButtonCadastrar, DivButton, H1, Img, IconsTrash } from "./styles";
 import "../../../components/Menu/Menu.css";
 import useForm from "../../../hooks/useForm";
 import categoriasRepository from "../../../repositories/categorias";
+import trashIcon from "../../../assets/img/icons8-trash-40.png";
 
 function CadastroCategoria() {
   const initialValues = {
+    id: "",
     nome: "",
     descricao: "",
   };
+  const history = useHistory();
   const { handleChange, values, clearForm } = useForm(initialValues);
   const [categorias, setCategorias] = useState([]);
 
@@ -20,11 +23,10 @@ function CadastroCategoria() {
       const URL = window.location.hostname.includes("localhost")
         ? "http://localhost:3003/categorias"
         : "https://gmflix.herokuapp.com/categorias";
-      fetch(URL).then(async (reponse) => {
-        console.log(URL);
-        if (reponse.ok) {
-          const resposta = await reponse.json();
-          setCategorias(resposta);
+      fetch(URL).then(async (response) => {
+        if (response.ok) {
+          const result = await response.json();
+          setCategorias(result);
           return;
         }
         throw new Error("Não foi possível pegar os dados");
@@ -38,16 +40,17 @@ function CadastroCategoria() {
         onSubmit={function handleSubmit(info) {
           info.preventDefault();
           setCategorias([...categorias, values]);
-          //clearForm();
+          clearForm();
 
           categoriasRepository
             .create({
               titulo: values.nome,
               descricao: values.descricao,
               cor: "#fafafa",
+              createdAt: new Date(),
             })
             .then(() => {
-              alert("Categoria cadastrada com sucesso!");
+              window.location.reload(true);
               //history.push("/");
             });
         }}
@@ -77,12 +80,20 @@ function CadastroCategoria() {
           </ButtonCadastrar>
         </DivButton>
       </form>
-      <h1>Categorias Cadastradas</h1>
+
+      <h3>Categorias Cadastradas:</h3>
       <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.titulo}`}>
-            {categoria.titulo}
-            {categoria.nome}
+        {categorias.map((categoria, index) => (
+          <li style={{ display: "flex" }} key={`${categoria.titulo}`}>
+            <span>* {categoria.titulo}</span>
+            <IconsTrash
+              src={trashIcon}
+              id={categoria.id}
+              onClick={(e) => {
+                categoriasRepository.deleteCategories(categoria.id);
+                window.location.reload(true);
+              }}
+            />
           </li>
         ))}
       </ul>

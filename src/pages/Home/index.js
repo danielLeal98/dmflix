@@ -10,12 +10,21 @@ function Home() {
     categoriasRepository
       .getAllWithVideos()
       .then((categoriasComVideos) => {
+        console.log(categoriasComVideos);
         setinitialValues(categoriasComVideos);
       })
       .catch((err) => {
         console.log(err.message);
       });
   }, []);
+  const dadosBanner = [
+    {
+      videoTitle:
+        "Quer ser um Pro Player? Jogadores dão dicas de como se tornar um.",
+      url: "https://www.youtube.com/watch?v=ycvX_48RYSA&t=3s",
+    },
+  ];
+  console.log(dadosBanner);
   return (
     <PageDefault to="/cadastro/video" textButton="Novo Vídeo" paddingAll={0}>
       {initialValues.length === 0 && <div>Loading...</div>}
@@ -24,13 +33,13 @@ function Home() {
           return (
             <div key={categoria.id}>
               <BannerMain
-                videoTitle="Seja bem vindo ao GamesFlix o portal com o trailer dos melhores jogos por gênero!"
-                url="https://youtu.be/ycvX_48RYSA"
+                videoTitle="Seja Bem Vindo ao Games Flix"
+                url="https://www.youtube.com/watch?v=ycvX_48RYSA&t=3s"
                 videoDescription={
-                  "Como realizar seus sonhos e se tornar um jogador profissional de games? Veja abaixo um pouco sobre todos os jogos da atualidade."
+                  "Nesta plataforma você podera encontrar os trailers dos melhores jogos do momento por gênero."
                 }
               />
-              <Carousel ignoreFirstVideo category={initialValues[0]} />
+              <Carousel category={initialValues[0]} />
             </div>
           );
         }
