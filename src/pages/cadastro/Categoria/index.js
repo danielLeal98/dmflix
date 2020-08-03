@@ -22,7 +22,7 @@ function CadastroCategoria() {
     if (window.location.href.includes("localhost")) {
       const URL = window.location.hostname.includes("localhost")
         ? "http://localhost:3003/categorias"
-        : "https://gmflix.herokuapp.com/categorias";
+        : "https://games-flix.herokuapp.com/categorias";
       fetch(URL).then(async (response) => {
         if (response.ok) {
           const result = await response.json();

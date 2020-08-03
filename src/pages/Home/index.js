@@ -2,11 +2,24 @@ import React, { useEffect, useState } from "react";
 import BannerMain from "../../components/BannerMain";
 import Carousel from "../../components/Carousel";
 import categoriasRepository from "../../repositories/categorias";
+import videosRepository from "../../repositories/videos";
 import PageDefault from "../../components/PageDefault";
 
 function Home() {
   const [initialValues, setinitialValues] = useState([]);
+  const [initialVideos, setinitialVideos] = useState([]);
   useEffect(() => {
+    videosRepository
+      .getAll()
+      .then((videos) => {
+        console.log("meus videos");
+        console.log(videos);
+        setinitialVideos(videos);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+
     categoriasRepository
       .getAllWithVideos()
       .then((categoriasComVideos) => {
@@ -17,34 +30,21 @@ function Home() {
         console.log(err.message);
       });
   }, []);
-  const dadosBanner = [
-    {
-      videoTitle:
-        "Quer ser um Pro Player? Jogadores dão dicas de como se tornar um.",
-      url: "https://www.youtube.com/watch?v=ycvX_48RYSA&t=3s",
-    },
-  ];
-  console.log(dadosBanner);
+
   return (
     <PageDefault to="/cadastro/video" textButton="Novo Vídeo" paddingAll={0}>
       {initialValues.length === 0 && <div>Loading...</div>}
-      {initialValues.map((categoria, indice) => {
-        if (indice === 0) {
-          return (
-            <div key={categoria.id}>
-              <BannerMain
-                videoTitle="Seja Bem Vindo ao Games Flix"
-                url="https://www.youtube.com/watch?v=ycvX_48RYSA&t=3s"
-                videoDescription={
-                  "Nesta plataforma você podera encontrar os trailers dos melhores jogos do momento por gênero."
-                }
-              />
-              <Carousel category={initialValues[0]} />
-            </div>
-          );
-        }
-
-        return <Carousel key={categoria.id} category={categoria} />;
+      {initialVideos.map((video, indice) => {
+        return (
+          <ul>
+            <li>
+              <span> {video.id}</span>
+              <span> {video.url}</span>
+              <span> {video.titulo}</span>
+              <span> {video.categoriaId}</span>
+            </li>
+          </ul>
+        );
       })}
     </PageDefault>
   );
