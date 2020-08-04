@@ -50,7 +50,6 @@ function CadastroCategoria() {
               createdAt: new Date(),
             })
             .then(() => {
-              window.location.reload(true);
               history.push("/");
             });
         }}
@@ -80,25 +79,6 @@ function CadastroCategoria() {
           </ButtonCadastrar>
         </DivButton>
       </form>
-
-      <h3>Categorias Cadastradas:</h3>
-      <ul>
-        {categorias.map((categoria, index) => (
-          <li style={{ display: "flex" }} key={`${categoria.titulo}`}>
-            {console.log("To aquiii")}
-            {console.log(categorias)}
-            <span>* {categoria.titulo}</span>
-            <IconsTrash
-              src={trashIcon}
-              id={categoria.id}
-              onClick={(e) => {
-                categoriasRepository.deleteCategories(categoria.id);
-                window.location.reload(true);
-              }}
-            />
-          </li>
-        ))}
-      </ul>
     </PageDefault>
   );
 }
