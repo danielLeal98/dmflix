@@ -37,7 +37,7 @@ function Home() {
                   "Nesta plataforma você podera encontrar os trailers dos melhores jogos do momento por gênero."
                 }
               />
-              <Carousel category={initialValues[0]} />
+              <Carousel ignoreFirstVideo category={initialValues[0]} />
             </div>
           );
         }

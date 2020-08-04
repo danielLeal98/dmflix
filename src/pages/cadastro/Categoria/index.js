@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import PageDefault from "../../../components/PageDefault";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import FormField from "../../../components/FormField";
-import { ButtonCadastrar, DivButton, H1, Img, IconsTrash } from "./styles";
+import { ButtonCadastrar, DivButton, H1, Img } from "./styles";
 import "../../../components/Menu/Menu.css";
 import useForm from "../../../hooks/useForm";
 import categoriasRepository from "../../../repositories/categorias";
 import iconDelete from "../../../assets/img/icons8-delete-64.png";
 import { Table, Titulo, Container, Conteudo } from "../../../components/Tabela";
+import Spinner from "../../../components/Spinner";
 
 function CadastroCategoria() {
   const initialValues = {
@@ -96,24 +97,25 @@ function CadastroCategoria() {
           </ButtonCadastrar>
         </DivButton>
       </form>
-      <Table>
+      <Table key={'tabelaCategorias'}>
         <Container>
           <Titulo>Titulo</Titulo>
           <Titulo>Descrição</Titulo>
-          <Titulo className="ultimo">Remover</Titulo>
+          <Titulo className="ultimo">Ações</Titulo>
         </Container>
-        {categorias.lenght === 0 && <div>Loading...</div>}
-        {categorias.map((categoria) => {
+        {categorias.lenght === 0 && <Spinner>Loading...</Spinner>}
+        {categorias.map((categoria, index) => {
+          console.log(categorias)
           return (
-            <Container>
-              <Conteudo>{categoria.titulo}</Conteudo>
+            <Container key={index}>
+              <Conteudo>{categoria.titulo.toUpperCase()}</Conteudo>
               <Conteudo>{categoria.descricao}</Conteudo>
               <Conteudo>
                 <Conteudo.Paragrafo
                   target={categoria.id}
                   onClick={handleRemove}
                 >
-                  Remover
+                  Apagar
                 </Conteudo.Paragrafo>
               </Conteudo>
             </Container>

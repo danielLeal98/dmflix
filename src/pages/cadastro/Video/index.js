@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PageDefault from "../../../components/PageDefault";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import FormField from "../../../components/FormField";
 import videosRepository from "../../../repositories/videos";
 import categoriasRepository from "../../../repositories/categorias";
@@ -72,7 +72,7 @@ function CadastroVideo() {
         />
 
         <DivButton>
-          <img src={iconDelete} onClick={clearForm} />
+          <img src={iconDelete} onClick={clearForm} alt="clearForm" />
           <ButtonCadastrar type="submit">
             <img
               src="https://img.icons8.com/cotton/64/000000/circled-chevron-down.png"
