@@ -8,11 +8,11 @@ function Footer() {
     <FooterBase>
       <p>
         <img
-          style={{ margin: "10px" }}
+          style={{ margin: "1px 5px 1px" }}
           src={Logo}
           alt="Logo Site"
           width="auto"
-          height="50"
+          height="30"
         />
       </p>
       <a
@@ -21,11 +21,11 @@ function Footer() {
         rel="noopener noreferrer"
       >
         <img
-          style={{ margin: "10px" }}
+          style={{ margin: "1px 5px 1px" }}
           src="https://image.flaticon.com/icons/png/512/174/174857.png"
           alt="Logo Linkedin"
-          width="50"
-          height="50"
+          width="30"
+          height="30"
         />
       </a>
       <a
@@ -34,11 +34,11 @@ function Footer() {
         rel="noopener noreferrer"
       >
         <img
-          style={{ margin: "10px" }}
+          style={{ margin: "1px 5px 1px" }}
           src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png"
           alt="Logo GitHub"
-          width="50"
-          height="50"
+          width="30"
+          height="30"
         />
       </a>
       <a

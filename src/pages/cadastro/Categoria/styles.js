@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ButtonCadastrar = styled.button`
-  padding: 16px 24px;
   box-sizing: border-box;
   background-color: transparent;
   border: none;
@@ -19,7 +18,6 @@ export const ButtonCadastrar = styled.button`
     max-zoom: 0.3s;
   }
   @media (max-width: 800px) {
-    margin-left: 42%;
   }
 `;
 export const ButtonBack = styled.image`
@@ -51,7 +49,7 @@ export const H1 = styled.h1`
   }
 `;
 export const DivButton = styled.div`
-  display: flex;
+  display: -webkit-box;
   align-items: center;
   justify-content: center;
   @media (max-width: 800px) {

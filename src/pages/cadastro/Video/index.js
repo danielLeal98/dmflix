@@ -7,12 +7,18 @@ import categoriasRepository from "../../../repositories/categorias";
 import { ButtonCadastrar, DivButton, H1 } from "../Categoria/styles";
 import useForm from "../../../hooks/useForm";
 import "../../../components/Menu/Menu.css";
+import iconDelete from "../../../assets/img/icons8-delete-64.png";
 
 function CadastroVideo() {
+  const initialValues = {
+    titulo: "",
+    url: "",
+    categoria: "",
+  };
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
   const categoryTitles = categorias.map(({ titulo }) => titulo);
-  const { handleChange, values } = useForm({});
+  const { handleChange, values, clearForm } = useForm(initialValues);
 
   useEffect(() => {
     categoriasRepository.getAll().then((categoriasFromServer) => {
@@ -22,7 +28,7 @@ function CadastroVideo() {
 
   return (
     <PageDefault textButton="Nova Categoria" to="/cadastro/categoria">
-      <H1>Cadastro de Video {values.titulo}</H1>
+      <H1>Cadastro de Video: {values.titulo}</H1>
       <form
         onSubmit={(event) => {
           event.preventDefault();
@@ -66,12 +72,7 @@ function CadastroVideo() {
         />
 
         <DivButton>
-          <Link to="/">
-            <img
-              src="https://img.icons8.com/cotton/64/000000/circled-left-2.png"
-              alt="Back"
-            />
-          </Link>
+          <img src={iconDelete} onClick={clearForm} />
           <ButtonCadastrar type="submit">
             <img
               src="https://img.icons8.com/cotton/64/000000/circled-chevron-down.png"

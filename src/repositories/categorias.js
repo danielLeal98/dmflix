@@ -63,7 +63,6 @@ function deleteCategories(obj) {
   })
     .then(async (response) => {
       if (response.ok) {
-        alert("Categoria excluida com sucesso");
         const result = await response.json();
         return result;
       } else {

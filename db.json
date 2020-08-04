@@ -15,18 +15,18 @@
       "id": 2
     },
     {
-      "titulo": "Luta",
-      "descricao": "Jogos de Luta",
-      "cor": "#fafafa",
-      "createdAt": "2020-08-03T20:29:31.562Z",
-      "id": 3
-    },
-    {
       "titulo": "MMORPG",
       "descricao": "Jogos de MMORPG",
       "cor": "#fafafa",
       "createdAt": "2020-08-03T20:30:05.348Z",
       "id": 4
+    },
+    {
+      "titulo": "Luta",
+      "descricao": "Jogos de Luta",
+      "cor": "#fafafa",
+      "createdAt": "2020-08-04T13:35:42.855Z",
+      "id": 5
     }
   ],
   "videos": [
@@ -209,146 +209,6 @@
       "url": "https://www.youtube.com/watch?v=DD4zMOvRrzM",
       "categoriaId": 4,
       "createdAt": "2020-08-03T20:29:31.562Z"
-    },
-    {
-      "id": 27,
-      "titulo": "Euro Truck Simulator 2",
-      "url": "https://www.youtube.com/watch?v=xlTuC18xVII",
-      "categoriaId": 5,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 28,
-      "titulo": "Drift19",
-      "url": "https://www.youtube.com/watch?v=3t8m7Gwy49g",
-      "categoriaId": 5,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 29,
-      "titulo": "Gran Turismo 7",
-      "url": "https://www.youtube.com/watch?v=oz-O74SmTSQ",
-      "categoriaId": 5,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 30,
-      "titulo": "Forza Horizon 4",
-      "url": "https://www.youtube.com/watch?v=zJ477xAIlgU",
-      "categoriaId": 5,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 31,
-      "titulo": "Onrush",
-      "url": "https://www.youtube.com/watch?v=-gpcfmFT3jo",
-      "categoriaId": 5,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 32,
-      "titulo": "Assetto Corsa Competizione",
-      "url": "https://www.youtube.com/watch?v=CYncAnd31Q8",
-      "categoriaId": 5,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 33,
-      "titulo": "Automobilista 2",
-      "url": "https://www.youtube.com/watch?v=JVg1ftqwd20",
-      "categoriaId": 5,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 34,
-      "titulo": "Project CARS 3",
-      "url": "https://www.youtube.com/watch?v=-LgrvjJsP8Q",
-      "categoriaId": 5,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 35,
-      "titulo": "TT Isle of Man 2",
-      "url": "https://www.youtube.com/watch?v=7G6c6jOw4K8",
-      "categoriaId": 5,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 36,
-      "titulo": "TEKKEN 7",
-      "url": "https://www.youtube.com/watch?v=sjj4wJO1tBo",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 37,
-      "titulo": "SPIDER MAN 2 MILES MORALES",
-      "url": "https://www.youtube.com/watch?v=VoPt5wSazHE",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 38,
-      "titulo": "Street Fighter V",
-      "url": "https://www.youtube.com/watch?v=0nFd7Iylj5A",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 39,
-      "titulo": "MORTAL KOMBAT 11 Trailer",
-      "url": "https://www.youtube.com/watch?v=bxFoRCvEjUA",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 40,
-      "titulo": "DRAGON BALL FighterZ",
-      "url": "https://www.youtube.com/watch?v=YNAfOG4GfFQ",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 41,
-      "titulo": "JUMP FORCE",
-      "url": "https://www.youtube.com/watch?v=vGHxgyXy12k",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 42,
-      "titulo": "Injustice™ 2",
-      "url": "https://www.youtube.com/watch?v=oDav-JfidL0",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 43,
-      "titulo": "Streets of Rage 4",
-      "url": "https://www.youtube.com/watch?v=j_JtczD-9Ko",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 44,
-      "titulo": "THE KING OF FIGHTERS XIII STEAM EDITION",
-      "url": "https://www.youtube.com/watch?v=vAGxK7GnDLI",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 45,
-      "titulo": "Brawlhalla",
-      "url": "https://www.youtube.com/watch?v=fnd71bqiiW0",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
-    },
-    {
-      "id": 46,
-      "titulo": "SOULCALIBUR VI",
-      "url": "https://www.youtube.com/watch?v=kOq5dVigDGU",
-      "categoriaId": 3,
-      "createdAt": "2020-08-03T20:30:59.980Z"
     },
     {
       "titulo": "Novo Video de teste",

@@ -6,7 +6,8 @@ import { ButtonCadastrar, DivButton, H1, Img, IconsTrash } from "./styles";
 import "../../../components/Menu/Menu.css";
 import useForm from "../../../hooks/useForm";
 import categoriasRepository from "../../../repositories/categorias";
-import trashIcon from "../../../assets/img/icons8-trash-40.png";
+import iconDelete from "../../../assets/img/icons8-delete-64.png";
+import { Table, Titulo, Container, Conteudo } from "../../../components/Tabela";
 
 function CadastroCategoria() {
   const initialValues = {
@@ -33,6 +34,24 @@ function CadastroCategoria() {
       });
     }
   }, []);
+
+  function handleRemove(e) {
+    const target = String(e.target.getAttribute("target"));
+
+    categoriasRepository
+      .deleteCategories(target)
+      .then(() => {
+        alert("Categoria deletada com sucesso");
+        categoriasRepository
+          .getAll()
+          .then((categoriasFromServer) => {
+            setCategorias(categoriasFromServer);
+          })
+          .catch((err) => alert(err.message));
+      })
+      .catch(() => alert("Não foi possível deletar a categoria"));
+  }
+
   return (
     <PageDefault textButton="Novo Vídeo" to="/cadastro/video">
       <H1>Cadastro de Categoria: {values.nome}</H1>
@@ -46,7 +65,7 @@ function CadastroCategoria() {
             .create({
               titulo: values.nome,
               descricao: values.descricao,
-              cor: "#fafafa",
+              cor: "#2D4059",
               createdAt: new Date(),
             })
             .then(() => {
@@ -71,14 +90,36 @@ function CadastroCategoria() {
         />
 
         <DivButton>
-          <Link to="/">
-            <Img src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" />
-          </Link>
+          <Img src={iconDelete} onClick={clearForm} />
           <ButtonCadastrar>
             <Img src="https://img.icons8.com/cotton/64/000000/circled-chevron-down.png" />
           </ButtonCadastrar>
         </DivButton>
       </form>
+      <Table>
+        <Container>
+          <Titulo>Titulo</Titulo>
+          <Titulo>Descrição</Titulo>
+          <Titulo className="ultimo">Remover</Titulo>
+        </Container>
+        {categorias.lenght === 0 && <div>Loading...</div>}
+        {categorias.map((categoria) => {
+          return (
+            <Container>
+              <Conteudo>{categoria.titulo}</Conteudo>
+              <Conteudo>{categoria.descricao}</Conteudo>
+              <Conteudo>
+                <Conteudo.Paragrafo
+                  target={categoria.id}
+                  onClick={handleRemove}
+                >
+                  Remover
+                </Conteudo.Paragrafo>
+              </Conteudo>
+            </Container>
+          );
+        })}
+      </Table>
     </PageDefault>
   );
 }

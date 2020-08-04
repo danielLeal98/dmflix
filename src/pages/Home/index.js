@@ -3,6 +3,7 @@ import BannerMain from "../../components/BannerMain";
 import Carousel from "../../components/Carousel";
 import categoriasRepository from "../../repositories/categorias";
 import PageDefault from "../../components/PageDefault";
+import Spinner from "../../components/Spinner";
 
 function Home() {
   const [initialValues, setinitialValues] = useState([]);
@@ -20,7 +21,11 @@ function Home() {
 
   return (
     <PageDefault to="/cadastro/video" textButton="Novo Vídeo" paddingAll={0}>
-      {initialValues.length === 0 && <div>Loading...</div>}
+      {initialValues.length === 0 && (
+        <div style={{ background: "black" }}>
+          <Spinner>Loading...</Spinner>
+        </div>
+      )}
       {initialValues.map((categoria, indice) => {
         if (indice === 0) {
           return (
