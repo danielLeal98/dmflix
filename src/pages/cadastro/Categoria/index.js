@@ -101,14 +101,14 @@ function CadastroCategoria() {
         <Container>
           <Titulo>Titulo</Titulo>
           <Titulo>Descrição</Titulo>
-          <Titulo className="ultimo">Ações</Titulo>
+          <Titulo className="last">Ações</Titulo>
         </Container>
         {categorias.lenght === 0 && <Spinner>Loading...</Spinner>}
         {categorias.map((categoria, index) => {
           console.log(categorias)
           return (
             <Container key={index}>
-              <Conteudo>{categoria.titulo.toUpperCase()}</Conteudo>
+              <Conteudo>{categoria.titulo}</Conteudo>
               <Conteudo>{categoria.descricao}</Conteudo>
               <Conteudo>
                 <Conteudo.Paragrafo
