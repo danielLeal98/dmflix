@@ -11,6 +11,7 @@ function Home() {
       .getAllWithVideos()
       .then((categoriasComVideos) => {
         setinitialValues(categoriasComVideos);
+        console.log(categoriasComVideos);
       })
       .catch((err) => {
         console.log(err.message);
