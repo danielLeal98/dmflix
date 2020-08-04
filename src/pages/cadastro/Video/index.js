@@ -38,7 +38,7 @@ function CadastroVideo() {
               createdAt: new Date(),
             })
             .then(() => {
-              alert("Vídeo cadastrado com sucesso em Homologação!");
+              alert("Vídeo cadastrado com sucesso!");
               history.push("/");
             });
         }}
