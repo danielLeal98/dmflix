@@ -26,40 +26,21 @@ function CadastroVideo() {
       <form
         onSubmit={(event) => {
           event.preventDefault();
+          const categoriaEscolhida = categorias.find(
+            (categoria) => categoria.titulo === values.categoria
+          );
 
-          if (window.location.href.includes("localhost")) {
-            const categoriaEscolhida = categorias.find(
-              (categoria) => categoria.titulo === values.categoria
-            );
-
-            videosRepository
-              .create({
-                titulo: values.titulo,
-                url: values.url,
-                categoriaId: categoriaEscolhida.id,
-                createdAt: new Date(),
-              })
-              .then(() => {
-                alert("Vídeo cadastrado com sucesso em Homologação!");
-                history.push("/");
-              });
-          } else {
-            const categoriaEscolhida = categorias.find(
-              (categoria) => categoria.nome === values.categoria
-            );
-
-            videosRepository
-              .create({
-                nome: values.titulo,
-                url: values.url,
-                categoriaId: categoriaEscolhida.id,
-                createdAt: new Date(),
-              })
-              .then(() => {
-                alert("Vídeo cadastrado com sucesso em Produção!");
-                history.push("/");
-              });
-          }
+          videosRepository
+            .create({
+              titulo: values.titulo,
+              url: values.url,
+              categoriaId: categoriaEscolhida.id,
+              createdAt: new Date(),
+            })
+            .then(() => {
+              alert("Vídeo cadastrado com sucesso em Homologação!");
+              history.push("/");
+            });
         }}
       >
         <FormField
