@@ -29,18 +29,17 @@ function CadastroCategoria() {
         : "https://games-flix.herokuapp.com/categorias";
       fetch(URL).then(async (response) => {
         alert(response.status);
-        if (response.ok) {
-          alert(URL);
-          alert('meu response');
-          console.log(response);
-          const result = await response.json();
-          alert('meu result');
-          console.log(result);
-          getCategorias();
-          setCategorias(result);
-          return;
-        }
-        throw new Error("Não foi possível pegar os dados");
+        alert(URL);
+        alert('meu response');
+        console.log(response);
+        const result = await response.json();
+        alert('meu result');
+        console.log(result);
+        getCategorias();
+        setCategorias(result);
+        return;
+
+
       });
     }
   }, []);
@@ -92,7 +91,7 @@ function CadastroCategoria() {
               createdAt: new Date(),
             })
             .then(() => {
-              history.push("/");
+              //history.push("/");
             });
         }}
       >
