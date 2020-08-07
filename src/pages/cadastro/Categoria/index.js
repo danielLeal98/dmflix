@@ -12,8 +12,7 @@ import Spinner from "../../../components/Spinner";
 
 function CadastroCategoria() {
   const initialValues = {
-    id: "",
-    nome: "",
+    titulo: "",
     descricao: "",
   };
   const history = useHistory();
@@ -28,18 +27,9 @@ function CadastroCategoria() {
         ? "http://localhost:3003/categorias"
         : "https://games-flix.herokuapp.com/categorias";
       fetch(URL).then(async (response) => {
-        alert(response.status);
-        alert(URL);
-        alert('meu response');
-        console.log(response);
         const result = await response.json();
-        alert('meu result');
-        console.log(result);
-        getCategorias();
         setCategorias(result);
         return;
-
-
       });
     }
   }, []);
@@ -76,7 +66,7 @@ function CadastroCategoria() {
 
   return (
     <PageDefault textButton="Novo Vídeo" to="/cadastro/video">
-      <H1>Cadastro de Categoria: {values.nome}</H1>
+      <H1>Cadastro de Categoria: {values.titulo}</H1>
       <form
         onSubmit={function handleSubmit(info) {
           info.preventDefault();
@@ -85,7 +75,7 @@ function CadastroCategoria() {
 
           categoriasRepository
             .create({
-              titulo: values.nome,
+              titulo: values.titulo,
               descricao: values.descricao,
               cor: "#2D4059",
               createdAt: new Date(),
@@ -96,10 +86,10 @@ function CadastroCategoria() {
         }}
       >
         <FormField
-          label="Nome"
+          label="Titulo"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -128,7 +118,7 @@ function CadastroCategoria() {
         {categorias.map((categoria, index) => {
           console.log(categorias)
           return (
-            <Container key={index}>
+            <Container key={index} id={index}>
               <Conteudo>{categoria.titulo}</Conteudo>
               <Conteudo>{categoria.descricao}</Conteudo>
               <Conteudo>
