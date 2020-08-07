@@ -26,8 +26,14 @@ function CadastroCategoria() {
         ? "http://localhost:3003/categorias"
         : "https://games-flix.herokuapp.com/categorias";
       fetch(URL).then(async (response) => {
+        alert(response.status);
         if (response.ok) {
+          alert(URL);
+          alert('meu response');
+          console.log(response);
           const result = await response.json();
+          alert('meu result');
+          console.log(result);
           setCategorias(result);
           return;
         }

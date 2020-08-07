@@ -20,7 +20,7 @@ const Titulo = styled.div`
   padding: 10px 10px 10px 10px;
   font-size: 20px;
   border-bottom: 2px solid var(--primary);
-  &:not(.ultimo) {
+  &:not(.last) {
     border-right: 2px solid var(--primary);
   }
 `;
