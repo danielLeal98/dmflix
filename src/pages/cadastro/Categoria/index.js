@@ -20,6 +20,8 @@ function CadastroCategoria() {
   const { handleChange, values, clearForm } = useForm(initialValues);
   const [categorias, setCategorias] = useState([]);
 
+
+
   useEffect(() => {
     if (window.location.href.includes("localhost")) {
       const URL = window.location.hostname.includes("localhost")
@@ -34,6 +36,7 @@ function CadastroCategoria() {
           const result = await response.json();
           alert('meu result');
           console.log(result);
+          getCategorias();
           setCategorias(result);
           return;
         }
@@ -41,6 +44,19 @@ function CadastroCategoria() {
       });
     }
   }, []);
+
+  function getCategorias() {
+    categoriasRepository
+      .getAll()
+      .then((categoriasFromServer) => {
+        alert('getCategorias');
+        alert(categoriasFromServer);
+        console.log(categoriasFromServer);
+        setCategorias(categoriasFromServer);
+
+      })
+      .catch((err) => alert(err.message));
+  }
 
   function handleRemove(e) {
     const target = String(e.target.getAttribute("target"));
