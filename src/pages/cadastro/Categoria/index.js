@@ -8,7 +8,8 @@ import useForm from '../../../hooks/useForm';
 import categoriasRepository from '../../../repositories/categorias';
 import iconDelete from '../../../assets/img/icons8-delete-64.png';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
-import '../../../components/Tabela/styles.css';
+import { Table, Titulo, Container, Conteudo } from '../../../components/Tabela';
+import Spinner from '../../../components/Spinner';
 
 function CadastroCategoria() {
   const initialValues = {
@@ -21,27 +22,13 @@ function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = window.location.hostname.includes('localhost')
-        ? 'http://localhost:3003/categorias'
-        : 'https://games-flix.herokuapp.com/categorias';
-      fetch(URL).then(async (response) => {
-        const result = await response.json();
-        setCategorias(result);
-        return;
-      });
-    }
-  }, []);
-
-  function getCategorias() {
     categoriasRepository
       .getAll()
       .then((categoriasFromServer) => {
-        console.log(categoriasFromServer);
         setCategorias(categoriasFromServer);
       })
-      .catch((err) => alert(err.message));
-  }
+      .catch((e) => alert(e.message));
+  }, []);
 
   function handleRemove(e) {
     const target = String(e.target.getAttribute('target'));
@@ -49,7 +36,6 @@ function CadastroCategoria() {
     categoriasRepository
       .deleteCategories(target)
       .then(() => {
-        alert('Categoria deletada com sucesso');
         categoriasRepository
           .getAll()
           .then((categoriasFromServer) => {
@@ -71,6 +57,7 @@ function CadastroCategoria() {
 
           categoriasRepository
             .create({
+              id: categorias.length + 1,
               titulo: values.titulo,
               descricao: values.descricao,
               cor: '#2D4059',
@@ -104,15 +91,31 @@ function CadastroCategoria() {
           </ButtonCadastrar>
         </DivButton>
       </form>
-      <div style={{ marginBottom: '20px', textAlign: '-webkit-center' }}>
-        <BootstrapTable data={categorias} class="dataTable" exportCSV>
-          <TableHeaderColumn dataField="id" isKey>
-            ID
-          </TableHeaderColumn>
-          <TableHeaderColumn dataField="titulo">Titulo</TableHeaderColumn>
-          <TableHeaderColumn dataField="descricao">Descrição</TableHeaderColumn>
-        </BootstrapTable>
-      </div>
+      <Table>
+        <Container>
+          <Titulo>Titulo</Titulo>
+          <Titulo>Descrição</Titulo>
+          <Titulo className="last">Ações</Titulo>
+        </Container>
+        {categorias.lenght === 0 && <Spinner>Loading...</Spinner>}
+        {categorias.map((categoria, index) => {
+          console.log(categorias);
+          return (
+            <Container key={index}>
+              <Conteudo>{categoria.titulo}</Conteudo>
+              <Conteudo>{categoria.descricao}</Conteudo>
+              <Conteudo>
+                <Conteudo.Paragrafo
+                  target={categoria.id}
+                  onClick={handleRemove}
+                >
+                  Apagar
+                </Conteudo.Paragrafo>
+              </Conteudo>
+            </Container>
+          );
+        })}
+      </Table>
     </PageDefault>
   );
 }

@@ -19,6 +19,7 @@ const Table = styled.div`
 const Titulo = styled.div`
   padding: 10px 10px 10px 10px;
   font-size: 20px;
+  background-color: var(--primary);
   border-bottom: 2px solid var(--primary);
   &:not(.last) {
     border-right: 2px solid var(--primary);
@@ -28,6 +29,9 @@ const Titulo = styled.div`
 const Conteudo = styled.div`
   padding-left: 10px;
   color: var(--white);
+  &:not(.last) {
+    border-right: 2px solid var(--primary);
+  }
 `;
 
 Conteudo.Paragrafo = styled.p`

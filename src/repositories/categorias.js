@@ -5,7 +5,6 @@ const URL_CATEGORIES = `${config.URL_BACKEND}/categorias`;
 function getAll() {
   return fetch(`${URL_CATEGORIES}`)
     .then(async (response) => {
-      alert(URL_CATEGORIES);
       if (response.ok) {
         const result = await response.json();
         return result;
@@ -21,7 +20,6 @@ function getAll() {
 function getAllWithVideos() {
   return fetch(`${URL_CATEGORIES}?_embed=videos`)
     .then(async (response) => {
-      alert(URL_CATEGORIES);
       if (response.ok) {
         const result = await response.json();
         return result;
@@ -44,7 +42,6 @@ function create(obj) {
   })
     .then(async (response) => {
       if (response.ok) {
-        alert(URL_CATEGORIES);
         alert('Categoria cadastrada com sucesso');
         const result = await response.json();
         return result;
@@ -67,6 +64,7 @@ function deleteCategories(obj) {
     .then(async (response) => {
       if (response.ok) {
         const result = await response.json();
+        alert('Categoria deletada com Sucesso!');
         return result;
       } else {
         alert('Não foi possível deletar a categoria selecionada');
