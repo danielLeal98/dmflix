@@ -1,15 +1,15 @@
-import React from "react";
-import VideoIframeResponsive from "./components/VideoIframeResponsive";
+import React from 'react';
+import VideoIframeResponsive from './components/VideoIframeResponsive';
 import {
   BannerMainContainer,
   ContentAreaContainer,
   WatchButton,
-} from "./styles";
+} from './styles';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL.replace(
     /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/,
-    "$7"
+    '$7'
   );
 }
 
@@ -17,7 +17,7 @@ export default function BannerMain({ videoTitle, videoDescription, url }) {
   const youTubeID = getYouTubeId(url);
   //const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
   const bgUrl2 =
-    "https://steamstore-a.akamaihd.net/public/images/v6/blue_body_repeat.jpg?v=2";
+    'https://steamstore-a.akamaihd.net/public/images/v6/blue_body_repeat.jpg?v=2';
 
   return (
     <BannerMainContainer backgroundImage={bgUrl2}>
@@ -33,7 +33,7 @@ export default function BannerMain({ videoTitle, videoDescription, url }) {
         <ContentAreaContainer.Item>
           <VideoIframeResponsive youtubeID={youTubeID} />
           <WatchButton>
-            <a style={{ textDecoration: "none" }} href={url}>
+            <a style={{ textDecoration: 'none' }} href={url}>
               Assistir
             </a>
           </WatchButton>

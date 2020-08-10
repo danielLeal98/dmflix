@@ -1,31 +1,30 @@
-import React, { useState, useEffect } from "react";
-import PageDefault from "../../../components/PageDefault";
-import { useHistory } from "react-router-dom";
-import FormField from "../../../components/FormField";
-import { ButtonCadastrar, DivButton, H1, Img } from "./styles";
-import "../../../components/Menu/Menu.css";
-import useForm from "../../../hooks/useForm";
-import categoriasRepository from "../../../repositories/categorias";
-import iconDelete from "../../../assets/img/icons8-delete-64.png";
-import { Table, Titulo, Container, Conteudo } from "../../../components/Tabela";
-import Spinner from "../../../components/Spinner";
+import React, { useState, useEffect } from 'react';
+import PageDefault from '../../../components/PageDefault';
+import { useHistory } from 'react-router-dom';
+import FormField from '../../../components/FormField';
+import { ButtonCadastrar, DivButton, H1, Img } from './styles';
+import '../../../components/Menu/Menu.css';
+import useForm from '../../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias';
+import iconDelete from '../../../assets/img/icons8-delete-64.png';
+import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
+import '../../../components/Tabela/styles.css';
 
 function CadastroCategoria() {
   const initialValues = {
-    titulo: "",
-    descricao: "",
+    titulo: '',
+    descricao: '',
   };
+
   const history = useHistory();
   const { handleChange, values, clearForm } = useForm(initialValues);
   const [categorias, setCategorias] = useState([]);
 
-
-
   useEffect(() => {
-    if (window.location.href.includes("localhost")) {
-      const URL = window.location.hostname.includes("localhost")
-        ? "http://localhost:3003/categorias"
-        : "https://games-flix.herokuapp.com/categorias";
+    if (window.location.href.includes('localhost')) {
+      const URL = window.location.hostname.includes('localhost')
+        ? 'http://localhost:3003/categorias'
+        : 'https://games-flix.herokuapp.com/categorias';
       fetch(URL).then(async (response) => {
         const result = await response.json();
         setCategorias(result);
@@ -38,22 +37,19 @@ function CadastroCategoria() {
     categoriasRepository
       .getAll()
       .then((categoriasFromServer) => {
-        alert('getCategorias');
-        alert(categoriasFromServer);
         console.log(categoriasFromServer);
         setCategorias(categoriasFromServer);
-
       })
       .catch((err) => alert(err.message));
   }
 
   function handleRemove(e) {
-    const target = String(e.target.getAttribute("target"));
+    const target = String(e.target.getAttribute('target'));
 
     categoriasRepository
       .deleteCategories(target)
       .then(() => {
-        alert("Categoria deletada com sucesso");
+        alert('Categoria deletada com sucesso');
         categoriasRepository
           .getAll()
           .then((categoriasFromServer) => {
@@ -61,7 +57,7 @@ function CadastroCategoria() {
           })
           .catch((err) => alert(err.message));
       })
-      .catch(() => alert("Não foi possível deletar a categoria"));
+      .catch(() => alert('Não foi possível deletar a categoria'));
   }
 
   return (
@@ -77,7 +73,7 @@ function CadastroCategoria() {
             .create({
               titulo: values.titulo,
               descricao: values.descricao,
-              cor: "#2D4059",
+              cor: '#2D4059',
               createdAt: new Date(),
             })
             .then(() => {
@@ -108,31 +104,15 @@ function CadastroCategoria() {
           </ButtonCadastrar>
         </DivButton>
       </form>
-      <Table key={'tabelaCategorias'}>
-        <Container>
-          <Titulo>Titulo</Titulo>
-          <Titulo>Descrição</Titulo>
-          <Titulo className="last">Ações</Titulo>
-        </Container>
-        {categorias.lenght === 0 && <Spinner>Loading...</Spinner>}
-        {categorias.map((categoria, index) => {
-          console.log(categorias)
-          return (
-            <Container key={index} id={index}>
-              <Conteudo>{categoria.titulo}</Conteudo>
-              <Conteudo>{categoria.descricao}</Conteudo>
-              <Conteudo>
-                <Conteudo.Paragrafo
-                  target={categoria.id}
-                  onClick={handleRemove}
-                >
-                  Apagar
-                </Conteudo.Paragrafo>
-              </Conteudo>
-            </Container>
-          );
-        })}
-      </Table>
+      <div style={{ marginBottom: '20px', textAlign: '-webkit-center' }}>
+        <BootstrapTable data={categorias} class="dataTable" exportCSV>
+          <TableHeaderColumn dataField="id" isKey>
+            ID
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField="titulo">Titulo</TableHeaderColumn>
+          <TableHeaderColumn dataField="descricao">Descrição</TableHeaderColumn>
+        </BootstrapTable>
+      </div>
     </PageDefault>
   );
 }

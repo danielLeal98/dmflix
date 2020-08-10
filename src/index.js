@@ -1,12 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 
-import Home from "./pages/Home";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import CadastroVideo from "./pages/cadastro/Video";
-import CadastroCategoria from "./pages/cadastro/Categoria";
-import Error404 from "../src/components/Error";
+import Home from './pages/Home';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import CadastroVideo from './pages/cadastro/Video';
+import CadastroCategoria from './pages/cadastro/Categoria';
+import Error404 from '../src/components/Error';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -17,5 +17,5 @@ ReactDOM.render(
       <Route component={Error404} />
     </Switch>
   </BrowserRouter>,
-  document.getElementById("root")
+  document.getElementById('root')
 );

@@ -27,6 +27,20 @@
       "cor": "#2D4059",
       "createdAt": "2020-08-07T21:49:06.534Z",
       "id": 5
+    },
+    {
+      "titulo": "Outros",
+      "descricao": "Nova categoria",
+      "cor": "#2D4059",
+      "createdAt": "2020-08-10T06:53:33.134Z",
+      "id": 6
+    },
+    {
+      "titulo": "Nova Categoria de Teste",
+      "descricao": "aaaaaaaaaa",
+      "cor": "#2D4059",
+      "createdAt": "2020-08-10T08:05:50.495Z",
+      "id": 7
     }
   ],
   "videos": [

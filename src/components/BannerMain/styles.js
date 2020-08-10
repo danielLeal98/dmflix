@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContentAreaContainer = styled.section`
   margin-left: 3%;
@@ -79,7 +79,7 @@ export const BannerMainContainer = styled.section`
 
   &:after,
   &:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0;
@@ -113,7 +113,7 @@ export const WatchButton = styled.button`
   display: inline-block;
   border: 1px solid transparent;
   color: var(--white);
-  background: url("https://store.cloudflare.steamstatic.com/public/images/v6/home/background_spotlight.jpg");
+  background: url('https://store.cloudflare.steamstatic.com/public/images/v6/home/background_spotlight.jpg');
   border-color: var(--black);
   transition: opacity 0.3s;
   display: none;

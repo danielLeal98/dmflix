@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Title = styled.h3`
   display: inline-block;
@@ -13,7 +13,7 @@ export const Title = styled.h3`
   /* font-style: normal; */
   font-size: 1.75rem;
   font-weight: bold;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   line-height: 1;
   box-shadow: 0 0 20px 1px rgb(115, 115, 115, 0.7);
   @media (max-width: 800px) {

@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
-import { VideoCardGroupContainer, Title, ExtraLink } from "./styles";
-import VideoCard from "./components/VideoCard";
-import Slider, { SliderItem } from "./components/Slider";
+import React from 'react';
+import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
+import VideoCard from './components/VideoCard';
+import Slider, { SliderItem } from './components/Slider';
 
 function Carousel({ ignoreFirstVideo, category }) {
   const categoryTitle = category.titulo;
@@ -14,7 +14,7 @@ function Carousel({ ignoreFirstVideo, category }) {
     <VideoCardGroupContainer>
       {categoryTitle && (
         <>
-          <Title style={{ backgroundColor: "#2D4059" }}>
+          <Title style={{ backgroundColor: '#2D4059' }}>
             <ExtraLink>{categoryTitle.toUpperCase()}</ExtraLink>
           </Title>
         </>

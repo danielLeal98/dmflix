@@ -1,10 +1,10 @@
-import React from "react";
-import Footer from "../Footer";
-import Menu from "../Menu";
-import "./error.css";
-import img404 from "../../assets/img/error2.png";
-import ButtonLink from "../../components/Menu/ButtonLink";
-import { Link } from "react-router-dom";
+import React from 'react';
+import Footer from '../Footer';
+import Menu from '../Menu';
+import './error.css';
+import img404 from '../../assets/img/error2.png';
+import ButtonLink from '../../components/Menu/ButtonLink';
+import { Link } from 'react-router-dom';
 
 function Error404() {
   return (

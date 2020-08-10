@@ -1,11 +1,11 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const FormFieldWrapper = styled.div`
   position: relative;
   textarea {
     min-height: 150px;
   }
-  input[type="color"] {
+  input[type='color'] {
     padding-left: 56px;
   }
 `;
@@ -53,7 +53,7 @@ export const Input = styled.input`
   &:focus {
     border-bottom-color: var(--primary);
   }
-  &:focus:not([type="color"]) + ${Label.Text} {
+  &:focus:not([type='color']) + ${Label.Text} {
     transform: scale(0.8) translateY(-11px);
   }
   ${({ value }) => {
@@ -61,7 +61,7 @@ export const Input = styled.input`
     return (
       hasValue &&
       css`
-        &:not([type="color"]) + ${Label.Text} {
+        &:not([type='color']) + ${Label.Text} {
           transform: scale(0.8) translateY(-11px);
         }
       `
