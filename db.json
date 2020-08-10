@@ -2,45 +2,21 @@
   "categorias": [
     {
       "titulo": "Fps",
-      "descricao": "Jogos de FPS",
-      "cor": "#fafafa",
-      "createdAt": "2020-08-03T20:21:34.233Z",
+      "descricao": "Jogos de FPS - TIRO",
       "id": 1
     },
     {
       "titulo": "Esportes",
-      "descricao": "Jogos de Esporte",
-      "cor": "#fafafa",
-      "createdAt": "2020-08-03T20:29:16.357Z",
+      "descricao": "Jogos de Esportes",
       "id": 2
     },
     {
-      "titulo": "MMORPG",
-      "descricao": "Jogos de MMORPG",
-      "cor": "#fafafa",
-      "createdAt": "2020-08-03T20:30:05.348Z",
-      "id": 4
-    },
-    {
-      "titulo": "teste123",
-      "descricao": "teste categoria",
+      "titulo": "Novo Cadastro",
+      "descricao": "Testes tertewasd",
       "cor": "#2D4059",
-      "createdAt": "2020-08-07T21:49:06.534Z",
-      "id": 5
-    },
-    {
-      "titulo": "Outros",
-      "descricao": "Nova categoria",
-      "cor": "#2D4059",
-      "createdAt": "2020-08-10T06:53:33.134Z",
-      "id": 6
-    },
-    {
-      "titulo": "Nova Categoria de Teste",
-      "descricao": "aaaaaaaaaa",
-      "cor": "#2D4059",
-      "createdAt": "2020-08-10T08:05:50.495Z",
-      "id": 7
+      "createdAt": "2020-08-10T23:24:51.122Z",
+      "updatedAt": "2020-08-10T23:24:51.122Z",
+      "id": 3
     }
   ],
   "videos": [
@@ -167,69 +143,6 @@
       "url": "https://www.youtube.com/watch?v=HWCz66FFHY0",
       "categoriaId": 2,
       "createdAt": "2020-08-03T20:29:31.562Z"
-    },
-    {
-      "id": 19,
-      "titulo": "FINAL FANTASY XIV Online",
-      "url": "https://www.youtube.com/watch?v=2XbxPsWFyU8",
-      "categoriaId": 4,
-      "createdAt": "2020-08-03T20:29:31.562Z"
-    },
-    {
-      "id": 20,
-      "titulo": "The Elder Scrolls® Online",
-      "url": "https://www.youtube.com/watch?v=uq1o2VG1ogY",
-      "categoriaId": 4,
-      "createdAt": "2020-08-03T20:29:31.562Z"
-    },
-    {
-      "id": 21,
-      "titulo": "Path of Exile",
-      "url": "https://www.youtube.com/watch?v=brZT-Qdg8TY",
-      "categoriaId": 4,
-      "createdAt": "2020-08-03T20:29:31.562Z"
-    },
-    {
-      "id": 22,
-      "titulo": "Albion Online",
-      "url": "https://www.youtube.com/watch?v=eBU_Fxd0Jf4",
-      "categoriaId": 4,
-      "createdAt": "2020-08-03T20:29:31.562Z"
-    },
-    {
-      "id": 23,
-      "titulo": "Digimon Masters Online",
-      "url": "https://www.youtube.com/watch?v=eUWDJP46YeA",
-      "categoriaId": 4,
-      "createdAt": "2020-08-03T20:29:31.562Z"
-    },
-    {
-      "id": 24,
-      "titulo": "Star Trek Online",
-      "url": "https://www.youtube.com/watch?v=79YrRMwgcfA",
-      "categoriaId": 4,
-      "createdAt": "2020-08-03T20:29:31.562Z"
-    },
-    {
-      "id": 25,
-      "titulo": "World of Warcraft 3",
-      "url": "https://www.youtube.com/watch?v=d_sseanj5lw",
-      "categoriaId": 4,
-      "createdAt": "2020-08-03T20:29:31.562Z"
-    },
-    {
-      "id": 26,
-      "titulo": "Black Desert Online SA",
-      "url": "https://www.youtube.com/watch?v=DD4zMOvRrzM",
-      "categoriaId": 4,
-      "createdAt": "2020-08-03T20:29:31.562Z"
-    },
-    {
-      "titulo": "Novo Video de teste",
-      "url": "https://www.youtube.com/watch?v=XuAE4Xuj3L0",
-      "categoriaId": 4,
-      "createdAt": "2020-08-04T00:17:23.669Z",
-      "id": 47
     }
   ]
 }

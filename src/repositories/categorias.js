@@ -1,4 +1,5 @@
 import config from '../config';
+import { toast } from 'react-toastify';
 
 const URL_CATEGORIES = `${config.URL_BACKEND}/categorias`;
 
@@ -13,6 +14,7 @@ function getAll() {
       throw new Error('Não foi possível pegar os dados das Categorias');
     })
     .catch((err) => {
+      toast.error(err.message);
       console.log(err.message);
     });
 }
@@ -28,6 +30,7 @@ function getAllWithVideos() {
       throw new Error('Não foi possível pegar os dados das Categorias');
     })
     .catch((err) => {
+      toast.error(err.message);
       console.log(err.message);
     });
 }
@@ -42,7 +45,7 @@ function create(obj) {
   })
     .then(async (response) => {
       if (response.ok) {
-        alert('Categoria cadastrada com sucesso');
+        toast.success('Categoria cadastrada com sucesso');
         const result = await response.json();
         return result;
       }
@@ -50,7 +53,7 @@ function create(obj) {
       throw new Error('Não foi possível cadastrar as Categorias');
     })
     .catch((err) => {
-      console.log(err.message);
+      toast.error(err.message);
     });
 }
 
@@ -64,14 +67,36 @@ function deleteCategories(obj) {
     .then(async (response) => {
       if (response.ok) {
         const result = await response.json();
-        alert('Categoria deletada com Sucesso!');
+        toast.success('Categoria deletada com Sucesso!');
         return result;
       } else {
-        alert('Não foi possível deletar a categoria selecionada');
+        toast.error('Não foi possível deletar a categoria selecionada');
         throw new Error('Não foi possível deletar a categoria selecionada');
       }
     })
     .catch((err) => {
+      toast.error(err.message);
+      console.log(err.message);
+    });
+}
+function Patch(id, categoria) {
+  return fetch(`${URL_CATEGORIES}/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(categoria),
+  })
+    .then(async (response) => {
+      if (response.ok) {
+        const result = await response.json();
+        return result;
+      }
+
+      throw new Error('Não foi possível pegar os dados das Categorias');
+    })
+    .catch((err) => {
+      toast.error(err.message);
       console.log(err.message);
     });
 }
@@ -81,4 +106,5 @@ export default {
   getAll,
   create,
   deleteCategories,
+  Patch,
 };

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
+import { toast } from 'react-toastify';
 import { ButtonCadastrar, DivButton, H1, Img } from './styles';
 import '../../../components/Menu/Menu.css';
 import useForm from '../../../hooks/useForm';
@@ -27,7 +28,7 @@ function CadastroCategoria() {
       .then((categoriasFromServer) => {
         setCategorias(categoriasFromServer);
       })
-      .catch((e) => alert(e.message));
+      .catch((e) => toast.error(e.message));
   }, []);
 
   function handleRemove(e) {
@@ -41,9 +42,9 @@ function CadastroCategoria() {
           .then((categoriasFromServer) => {
             setCategorias(categoriasFromServer);
           })
-          .catch((err) => alert(err.message));
+          .catch((err) => toast.error(err.message));
       })
-      .catch(() => alert('Não foi possível deletar a categoria'));
+      .catch(() => toast.error('Não foi possível deletar a categoria'));
   }
 
   return (
@@ -55,13 +56,28 @@ function CadastroCategoria() {
           setCategorias([...categorias, values]);
           clearForm();
 
+          let errors = [];
+          const chaves = Object.keys(values);
+
+          errors = chaves.filter((chave) => {
+            return !values[chave];
+          });
+
+          if (errors.length > 0) {
+            errors.forEach((error) => {
+              toast.error(`O Campo ${error} precisa ser preenchido`);
+            });
+
+            return;
+          }
+
           categoriasRepository
             .create({
-              id: categorias.length + 1,
               titulo: values.titulo,
               descricao: values.descricao,
               cor: '#2D4059',
               createdAt: new Date(),
+              updatedAt: new Date(),
             })
             .then(() => {
               //history.push("/");
@@ -93,17 +109,27 @@ function CadastroCategoria() {
       </form>
       <Table>
         <Container>
-          <Titulo>Titulo</Titulo>
-          <Titulo>Descrição</Titulo>
-          <Titulo className="last">Ações</Titulo>
+          <Titulo className="first">Titulo</Titulo>
+          <Titulo className="first">Descrição</Titulo>
+          <Titulo> Editar</Titulo>
+          <Titulo> Apagar</Titulo>
         </Container>
         {categorias.lenght === 0 && <Spinner>Loading...</Spinner>}
         {categorias.map((categoria, index) => {
           console.log(categorias);
           return (
             <Container key={index}>
-              <Conteudo>{categoria.titulo}</Conteudo>
-              <Conteudo>{categoria.descricao}</Conteudo>
+              <Conteudo className="first">{categoria.titulo}</Conteudo>
+              <Conteudo className="first">{categoria.descricao}</Conteudo>
+              <Conteudo>
+                <Conteudo.Paragrafo
+                  className="edit"
+                  as={Link}
+                  to={`/editar/categoria?id=${categoria.id}&titulo=${categoria.titulo}&descricao=${categoria.descricao}`}
+                >
+                  Editar
+                </Conteudo.Paragrafo>
+              </Conteudo>
               <Conteudo>
                 <Conteudo.Paragrafo
                   target={categoria.id}

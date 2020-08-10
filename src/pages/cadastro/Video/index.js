@@ -1,19 +1,20 @@
-import React, { useState, useEffect } from "react";
-import PageDefault from "../../../components/PageDefault";
-import { useHistory } from "react-router-dom";
-import FormField from "../../../components/FormField";
-import videosRepository from "../../../repositories/videos";
-import categoriasRepository from "../../../repositories/categorias";
-import { ButtonCadastrar, DivButton, H1 } from "../Categoria/styles";
-import useForm from "../../../hooks/useForm";
-import "../../../components/Menu/Menu.css";
-import iconDelete from "../../../assets/img/icons8-delete-64.png";
+import React, { useState, useEffect } from 'react';
+import PageDefault from '../../../components/PageDefault';
+import { useHistory } from 'react-router-dom';
+import FormField from '../../../components/FormField';
+import videosRepository from '../../../repositories/videos';
+import categoriasRepository from '../../../repositories/categorias';
+import { ButtonCadastrar, DivButton, H1 } from '../Categoria/styles';
+import useForm from '../../../hooks/useForm';
+import '../../../components/Menu/Menu.css';
+import iconDelete from '../../../assets/img/icons8-delete-64.png';
+import { toast } from 'react-toastify';
 
 function CadastroVideo() {
   const initialValues = {
-    titulo: "",
-    url: "",
-    categoria: "",
+    titulo: '',
+    url: '',
+    categoria: '',
   };
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
@@ -35,7 +36,20 @@ function CadastroVideo() {
           const categoriaEscolhida = categorias.find(
             (categoria) => categoria.titulo === values.categoria
           );
+          let errors = [];
+          const chaves = Object.keys(values);
 
+          errors = chaves.filter((chave) => {
+            return !values[chave];
+          });
+
+          if (errors.length > 0) {
+            errors.forEach((error) => {
+              toast.error(`O Campo ${error} precisa ser preenchido`);
+            });
+
+            return;
+          }
           videosRepository
             .create({
               titulo: values.titulo,
@@ -44,8 +58,8 @@ function CadastroVideo() {
               createdAt: new Date(),
             })
             .then(() => {
-              alert("Vídeo cadastrado com sucesso!");
-              history.push("/");
+              clearForm();
+              //history.push('/');
             });
         }}
       >

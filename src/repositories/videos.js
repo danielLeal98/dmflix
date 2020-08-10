@@ -1,4 +1,5 @@
 import config from '../config';
+import { toast } from 'react-toastify';
 
 const URL_VIDEOS = `${config.URL_BACKEND}/videos`;
 
@@ -11,14 +12,19 @@ function create(obj) {
       'Content-type': 'application/json',
     },
     body: JSON.stringify(obj),
-  }).then(async (response) => {
-    if (response.ok) {
-      const result = await response.json();
-      return result;
-    }
-
-    throw new Error('Não foi possível cadastrar os dados');
-  });
+  })
+    .then(async (response) => {
+      if (response.ok) {
+        const result = await response.json();
+        toast.success('Vídeo cadastrado com sucesso!');
+        return result;
+      }
+      toast.error('Não foi possível cadastrar o Video');
+      throw new Error('Não foi possível cadastrar os dados');
+    })
+    .catch((err) => {
+      toast.error(err.message);
+    });
 }
 function getAll() {
   return fetch(`${urlTeste}`)
@@ -27,11 +33,11 @@ function getAll() {
         const result = await response.json();
         return result;
       }
-
+      toast.error('Não foi possível pegar os dados das Categorias');
       throw new Error('Não foi possível pegar os dados das Categorias');
     })
     .catch((err) => {
-      console.log(err.message);
+      toast.error(err.message);
     });
 }
 

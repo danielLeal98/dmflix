@@ -10,6 +10,10 @@ function useForm(initialValues) {
     });
   }
 
+  function handleClick() {
+    setValue(initialValues);
+  }
+
   function handleChange(parms) {
     setValue(parms.target.getAttribute('name'), parms.target.value);
   }
@@ -22,6 +26,7 @@ function useForm(initialValues) {
     values,
     handleChange,
     clearForm,
+    handleClick,
   };
 }
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 40% 40% 10% 10%;
   align-items: center;
 `;
 
@@ -17,27 +17,36 @@ const Table = styled.div`
 `;
 
 const Titulo = styled.div`
-  padding: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
   font-size: 20px;
   background-color: var(--primary);
+  color: var(--white);
+
   border-bottom: 2px solid var(--primary);
-  &:not(.last) {
-    border-right: 2px solid var(--primary);
+  &:not(.first) {
+    text-align: center;
   }
 `;
 
 const Conteudo = styled.div`
   padding-left: 10px;
-  color: var(--white);
-  &:not(.last) {
-    border-right: 2px solid var(--primary);
-  }
+  font-size: 16px;
+  color: var(--blackLighter);
 `;
 
 Conteudo.Paragrafo = styled.p`
+  display: grid;
   cursor: pointer;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid var(--primary);
+  &:hover:not(.edit) {
+    background-color: red;
+    color: var(--white);
+  }
   &:hover {
-    text-decoration: underline;
+    background-color: var(--grey);
+    color: var(--white);
   }
 `;
 
