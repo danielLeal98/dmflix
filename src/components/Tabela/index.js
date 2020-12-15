@@ -30,7 +30,7 @@ const Titulo = styled.div`
 
 const Conteudo = styled.div`
   padding-left: 10px;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--blackLighter);
 `;
 

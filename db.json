@@ -9,14 +9,6 @@
       "titulo": "Esportes",
       "descricao": "Jogos de Esportes",
       "id": 2
-    },
-    {
-      "titulo": "Novo Cadastro",
-      "descricao": "Testes tertewasd",
-      "cor": "#2D4059",
-      "createdAt": "2020-08-10T23:24:51.122Z",
-      "updatedAt": "2020-08-10T23:24:51.122Z",
-      "id": 3
     }
   ],
   "videos": [
@@ -143,6 +135,13 @@
       "url": "https://www.youtube.com/watch?v=HWCz66FFHY0",
       "categoriaId": 2,
       "createdAt": "2020-08-03T20:29:31.562Z"
+    },
+    {
+      "titulo": "Call of Duty Advanced Warfare",
+      "url": "https://www.youtube.com/watch?v=cHC2L5tPVuc",
+      "categoriaId": 1,
+      "createdAt": "2020-12-15T00:57:03.611Z",
+      "id": 19
     }
   ]
 }

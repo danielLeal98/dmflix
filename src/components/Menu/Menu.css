@@ -43,7 +43,7 @@ body {
 
 .ButtonLink {
   color: #66c0f4;
-  border: 1px solid var(--white);
+  border: none;
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
@@ -55,12 +55,12 @@ body {
   box-shadow: 0 0 4px #000;
   text-decoration: none;
   display: inline-block;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
   background: url('https://store.cloudflare.steamstatic.com/public/images/v6/home/background_spotlight.jpg');
 }
 .ButtonLink:hover,
 .ButtonLink:focus {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (max-width: 800px) {
@@ -71,7 +71,7 @@ body {
     bottom: 0;
     background: url('https://store.cloudflare.steamstatic.com/public/images/v6/home/background_spotlight.jpg');
     border-radius: 0;
-    border: 0;
+    border: none;
     text-align: center;
   }
 }

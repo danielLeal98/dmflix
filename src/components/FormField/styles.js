@@ -62,7 +62,7 @@ export const Input = styled.input`
       hasValue &&
       css`
         &:not([type='color']) + ${Label.Text} {
-          transform: scale(0.8) translateY(-11px);
+          transform: scale(0.8) translateY(-5px);
         }
       `
     );

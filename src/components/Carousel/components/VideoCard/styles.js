@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const VideoCardContainer = styled.a`
   width: 298px;
@@ -19,7 +19,7 @@ export const VideoCardContainer = styled.a`
   transition: width 0.3s;
   &:hover,
   &:focus {
-    width: calc(298px + 6vw);
+    width: calc(198px + 6vw);
     & > span {
       display: flex;
       align-items: center;

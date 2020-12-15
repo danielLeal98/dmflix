@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
+  font-family: 'Medium', sans-serif;
   padding: 16px 24px;
   box-sizing: border-box;
   background-color: var(--primary-black-2);
-  border: 1px solid #d9d9d9;
+  border: none;
   border-radius: 4px;
   font-style: normal;
   font-weight: bold;
